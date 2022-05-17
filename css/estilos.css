@@ -1,3 +1,17 @@
+@charset "UTF-8";
+/* Este selector es funcional a resetear los márgenes y paddings de nuestro sitio para un mejor trabajo*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* grid container */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "header header header" "main main main" "footer footer footer"; }
+
 /* h1-h6 */
 .h1 {
   font-size: 80px; }
@@ -16,3 +30,19 @@
 
 .h6 {
   font-size: 25px; }
+
+/* sintax */
+header {
+  grid-area: header;
+  grid-column: span 3;
+  grid-row: 1; }
+
+main {
+  grid-area: main;
+  grid-column: span 3;
+  grid-row: 2; }
+
+footer {
+  grid-area: footer;
+  grid-column: span 3;
+  grid-row: 3; }

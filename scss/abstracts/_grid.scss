@@ -1,0 +1,29 @@
+@mixin grid(){
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+        "header header header"
+        "main main main"
+        "footer footer footer";
+}
+
+@mixin grid-children_h(){
+    grid-area: header;
+    grid-column: span 3;
+    grid-row: 1;
+}
+
+@mixin grid-children_m(){
+    grid-area: main;
+    grid-column: span 3;
+    grid-row: 2;
+}
+
+@mixin grid-children_f(){
+    grid-area: footer;
+    grid-column: span 3;
+    grid-row: 3;
+}
+
+
