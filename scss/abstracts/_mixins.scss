@@ -1,0 +1,39 @@
+// Displays //
+
+@mixin grid($gtc, $gtr){
+    display: grid;
+    grid-template-columns: $gtc;
+    grid-template-rows: $gtr;
+};
+
+@mixin flex($fd, $jc, $ai){
+    display: flex;
+    flex-direction: $fd;
+    justify-content: $jc;
+    align-items: $ai;
+};
+
+
+
+
+
+// Hamburger Menu // 
+
+@mixin mQuerie($size){
+    @if $size == bars{
+        @media (max-width: 768px){
+            display: block;
+            cursor: pointer;
+        }
+    } @else if $size == sections{
+        @media (max-width: 768px){
+            position: fixed;
+            top: 80px;
+            bottom: 0;
+            background: red;
+            width: 100%;
+            left: 0;
+            @include flex(column, space-evenly, center)
+        }
+    }
+}

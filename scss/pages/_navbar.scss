@@ -1,0 +1,39 @@
+nav{
+    .nav-container{
+    @include flex(row, space-between, center);
+    position: sticky;
+    top: 0px;
+    background-color: (map-get($colores, primario));
+    height: 80px;
+        .nav-logo{
+            text-decoration: none;
+            font-family: Roboto;
+            color: map-get($colores, letras);
+            margin: 0px 20px;
+        }
+        .nav-label_img{
+            font-size: 3rem;
+            color: map-get($colores, letras);
+        }
+        .nav-ul{
+            display: flex;
+            @include mQuerie(sections);
+        }
+        .nav-li{
+            margin: 0px 10px;
+            list-style-type: none;
+            font-family: Roboto;
+        }
+        .nav-a{
+            text-decoration: none;
+            color: map-get($colores, letras);
+        }
+        .nav-label_img, .nav-input{
+            display: none;
+        }
+        .nav-label_img{
+            @include mQuerie(bars);
+        }
+    }
+}
+

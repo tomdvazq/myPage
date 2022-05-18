@@ -1,5 +1,7 @@
 /* Estos cambios son personalización propia */
 
+/* H1 a H6 */ 
+
 h1{
     font-size: 3.7rem;
 }
@@ -22,4 +24,34 @@ h5{
 
 h6{
     font-size: 2.1rem;
+}
+
+/* Containers */ 
+
+.grid-container{
+    @include grid(repeat(3,1fr), repeat(5,1fr));
+    grid-template-areas: 
+        "header header header"
+        "nav nav nav"
+        "main main main"
+        "main main main"
+        "footer footer footer";
+}
+
+/* Secciones sintáxicas */
+
+nav{
+    grid-area: nav;
+}
+
+main{
+    grid-area: main;
+}
+
+aside{
+    grid-area: aside;
+}
+
+footer{
+    grid-area: footer;
 }

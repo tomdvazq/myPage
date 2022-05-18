@@ -4,15 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link href="../css/estilos.css" rel="stylesheet">
     <title>Home | @tomdvazq</title>
 </head>
 <body>
-    <h1>Hola Mundo</h1>
-    <h2>Hola Mundo</h2>
-    <h3>Hola Mundo</h3>
-    <h4>Hola Mundo</h4>
-    <h5>Hola Mundo</h5>
-    <h6>Hola Mundo</h6>
+    <div class="grid-container">
+        <header>
+            <div class="container">
+                <img src="media/ondulado.gif" alt="ondas" class="img-ondas">
+                <h1 class="info">Bienvenido</h1>
+            </div>
+        </header>
+        <nav>
+            <div class="nav-container">
+                <!-- LOGO -->
+                <a href="#" class="nav-logo">@tomdvazq</a>
+
+                <!-- NAV MENU MOBILE/TABLET -->
+                <label for="menu"" class="nav-label">
+                    <i class='bx bx-menu nav-label_img'></i>
+                </label>
+                <input type="checkbox" id="menu" class="nav-input">
+
+                <!-- NAV -->
+                <ul class="nav-ul">
+                    <li class="nav-li"><a href="#" class="nav-a">Sobre mí</a></li>
+                    <li class="nav-li"><a href="#" class="nav-a">Portfolio</a></li>
+                    <li class="nav-li"><a href="#" class="nav-a">Hard Skills</a></li>
+                    <li class="nav-li"><a href="#" class="nav-a">Contacto</a></li>
+                    <li class="nav-li"><a href="#" class="nav-a">Redes Sociales</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
 </body>
 </html>

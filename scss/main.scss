@@ -1,2 +1,7 @@
 @import 'base/reset';
-@import 'abstracts/edits'
+@import 'base/fonts';
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+@import 'abstracts/edits';
+@import 'pages/header';
+@import 'pages/navbar';
