@@ -30,10 +30,13 @@
             position: fixed;
             top: 80px;
             bottom: 0;
-            background: red;
+            background: map-get($colores, terciario);
             width: 100%;
             left: 0;
-            @include flex(column, space-evenly, center)
+            @include flex(column, space-evenly, center);
+            clip-path: circle(0 at center);
+            transition: clip-path 1s ease-in-out;
+            z-index: 0;
         }
     }
 }

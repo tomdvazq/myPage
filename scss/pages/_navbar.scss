@@ -5,6 +5,7 @@ nav{
     top: 0px;
     background-color: (map-get($colores, primario));
     height: 80px;
+    z-index: 3;
         .nav-logo{
             text-decoration: none;
             font-family: Roboto;
@@ -14,6 +15,7 @@ nav{
         .nav-label_img{
             font-size: 3rem;
             color: map-get($colores, letras);
+            margin: 0px 20px;
         }
         .nav-ul{
             display: flex;
@@ -33,6 +35,9 @@ nav{
         }
         .nav-label_img{
             @include mQuerie(bars);
+        }
+        .nav-input:checked + .nav-ul{
+            clip-path: circle(100% at center);
         }
     }
 }

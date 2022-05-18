@@ -1,5 +1,6 @@
 header{
     grid-area: header;
+    z-index: 5;
         .container{
             @include flex(column, center, center)
                 .img-ondas{
