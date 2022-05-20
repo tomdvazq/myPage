@@ -1,44 +1,46 @@
 nav{
-    .nav-container{
-    @include flex(row, space-between, center);
+    grid-area: nav;
+    grid-template-rows: span 3;
     position: sticky;
     top: 0px;
-    background-color: (map-get($colores, primario));
-    height: 80px;
     z-index: 3;
-        .nav-logo{
-            text-decoration: none;
-            font-family: Roboto;
-            color: map-get($colores, letras);
-            margin: 0px 20px;
+        .nav-container{
+        @include flex(row, space-between, center);
+        background-color: (map-get($colores, primario));
+        height: 80px;
+            .nav-logo{
+                text-decoration: none;
+                font-family: Roboto;
+                color: map-get($colores, letras);
+                margin: 0px 20px;
+            }
+            .nav-label_img{
+                font-size: 3rem;
+                color: map-get($colores, letras);
+                margin: 0px 20px;
+            }
+            .nav-ul{
+                display: flex;
+                @include mQuerie(sections);
+            }
+            .nav-li{
+                margin: 0px 10px;
+                list-style-type: none;
+                font-family: Roboto;
+            }
+            .nav-a{
+                text-decoration: none;
+                color: map-get($colores, letras);
+            }
+            .nav-label_img, .nav-input{
+                display: none;
+            }
+            .nav-label_img{
+                @include mQuerie(bars);
+            }
+            .nav-input:checked + .nav-ul{
+                clip-path: circle(100% at center);
+            }
         }
-        .nav-label_img{
-            font-size: 3rem;
-            color: map-get($colores, letras);
-            margin: 0px 20px;
-        }
-        .nav-ul{
-            display: flex;
-            @include mQuerie(sections);
-        }
-        .nav-li{
-            margin: 0px 10px;
-            list-style-type: none;
-            font-family: Roboto;
-        }
-        .nav-a{
-            text-decoration: none;
-            color: map-get($colores, letras);
-        }
-        .nav-label_img, .nav-input{
-            display: none;
-        }
-        .nav-label_img{
-            @include mQuerie(bars);
-        }
-        .nav-input:checked + .nav-ul{
-            clip-path: circle(100% at center);
-        }
-    }
 }
 

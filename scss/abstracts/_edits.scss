@@ -1,35 +1,7 @@
-/* Estos cambios son personalización propia */
-
-/* H1 a H6 */ 
-
-h1{
-    font-size: 3.7rem;
-}
-
-h2{
-    font-size: 3.4rem;
-}
-
-h3{
-    font-size: 3.1rem;
-}
-
-h4{
-    font-size: 2.7rem;
-}
-
-h5{
-    font-size: 2.4rem;
-}
-
-h6{
-    font-size: 2.1rem;
-}
-
 /* Containers */ 
 
 .grid-container{
-    @include grid(repeat(3,1fr), repeat(5,1fr));
+    @include grid(repeat(3,1fr), 1fr 80px repeat(3,1fr));
     grid-template-areas: 
         "header header header"
         "nav nav nav"
@@ -39,14 +11,6 @@ h6{
 }
 
 /* Secciones sintáxicas */
-
-nav{
-    grid-area: nav;
-}
-
-main{
-    grid-area: main;
-}
 
 aside{
     grid-area: aside;
