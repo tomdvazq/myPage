@@ -40,3 +40,21 @@
         }
     }
 }
+
+// Containers Main //
+
+@mixin containerMainP($c){
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: $c;
+}
+
+@mixin containerMainS($c){
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 460px;
+    background-color: $c;
+}

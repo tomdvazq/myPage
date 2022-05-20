@@ -1,9 +1,8 @@
 /* Containers */ 
 
 .grid-container{
-    @include grid(repeat(3,1fr), 1fr 80px repeat(3,1fr));
+    @include grid(repeat(3,1fr), 80px repeat(3,1fr));
     grid-template-areas: 
-        "header header header"
         "nav nav nav"
         "main main main"
         "main main main"
