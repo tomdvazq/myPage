@@ -19,6 +19,10 @@ body {
   font-family: Poppins;
   src: url(../../fonts/Poppins-ExtraLight.ttf); }
 
+@font-face {
+  font-family: Bleach;
+  src: url(../../fonts/Bleach.ttf); }
+
 /* Containers */
 .grid-container {
   display: grid;
@@ -77,7 +81,8 @@ nav {
     nav .nav-container .nav-li {
       margin: 0px 10px;
       list-style-type: none;
-      font-family: Roboto; }
+      font-family: Roboto;
+      font-size: 17px; }
     nav .nav-container .nav-a {
       text-decoration: none;
       color: white; }
@@ -97,7 +102,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 475px;
+  height: 100vh;
   background-color: rgba(236, 219, 186, 0.7);
   display: flex;
   flex-direction: column;
@@ -108,11 +113,15 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center; }
-    .about-me .about-me_section .aboutMe-h2 {
+    .about-me .about-me_section .aboutMe-h1 {
       color: black;
       text-align: center;
       font-size: 45px;
       font-weight: bold; }
+    .about-me .about-me_section .aboutMe-h2 {
+      color: black;
+      font-size: 25px;
+      text-align: center; }
 
 .about-me_2 {
   display: flex;
@@ -136,9 +145,10 @@ main {
       color: white;
       font-size: 15px; }
     .about-me_2 .about-me_section .aboutMe-img {
-      width: 100px;
-      height: 100px;
+      width: 125px;
+      height: 125px;
       border-radius: 50%;
+      background: #eeb61b;
       margin: 20px 0px; }
     .about-me_2 .about-me_section .aboutMe-p {
       color: white;
@@ -177,7 +187,9 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  background: center fixed url(../../media/aboutMe-data.jpg);
+  background-size: cover; }
   .hardskills .hardskills-section {
     display: flex;
     flex-direction: column;
@@ -189,6 +201,204 @@ main {
     height: 475px;
     background-color: rgba(236, 219, 186, 0.7);
     width: 100%; }
+    @media (max-width: 768px) {
+      .hardskills .hardskills-section {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: rgba(236, 219, 186, 0.7); } }
     .hardskills .hardskills-section .hardskills-h2 {
+      color: white;
+      font-size: 50px;
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 10px;
+      font-weight: bold; }
+
+.hardskills-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .hardskills-2 .hardskills-2_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 475px;
+    background-color: rgba(200, 75, 49, 0.7);
+    width: 100%; }
+    .hardskills-2 .hardskills-2_section .hardskills-section_h2 {
+      color: white;
+      text-align: center;
+      font-size: 20px;
+      margin: 10px 0px;
+      background-color: rgba(0, 0, 0, 0.4);
+      width: 100%;
+      padding: 0px 10px; }
+    .hardskills-2 .hardskills-2_section .hardskills-section_1 {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: none; }
+      .hardskills-2 .hardskills-2_section .hardskills-section_1 .bxl-html5, .hardskills-2 .hardskills-2_section .hardskills-section_1 .bxl-css3, .hardskills-2 .hardskills-2_section .hardskills-section_1 .bxl-javascript {
+        color: rgba(45, 66, 99, 0.7);
+        font-size: 100px;
+        padding: 0px 10px; }
+    .hardskills-2 .hardskills-2_section .hardskills-section_2, .hardskills-2 .hardskills-2_section .hardskills-section_3 {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: none; }
+      .hardskills-2 .hardskills-2_section .hardskills-section_2 .bxl-bootstrap, .hardskills-2 .hardskills-2_section .hardskills-section_3 .bxl-bootstrap, .hardskills-2 .hardskills-2_section .hardskills-section_2 .bxl-tailwind-css, .hardskills-2 .hardskills-2_section .hardskills-section_3 .bxl-tailwind-css, .hardskills-2 .hardskills-2_section .hardskills-section_2 .bxl-sass, .hardskills-2 .hardskills-2_section .hardskills-section_3 .bxl-sass {
+        color: rgba(45, 66, 99, 0.7);
+        font-size: 100px;
+        padding: 0px 10px; }
+    .hardskills-2 .hardskills-2_section .hardskills-section_3 .bxl-git, .hardskills-2 .hardskills-2_section .hardskills-section_3 .bxl-github {
+      color: rgba(45, 66, 99, 0.7);
+      font-size: 100px;
+      padding: 0px 10px; }
+
+.hardskills-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .hardskills-3 .hardskills-3_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 475px;
+    background-color: rgba(45, 66, 99, 0.7);
+    width: 100%; }
+    .hardskills-3 .hardskills-3_section .hardskills-section_h2 {
+      color: white;
+      text-align: center;
+      font-size: 20px;
+      margin: 10px 0px;
+      background-color: rgba(0, 0, 0, 0.4);
+      width: 100%;
+      padding: 0px 10px; }
+    .hardskills-3 .hardskills-3_section .hardskills-section_4 {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: none; }
+      .hardskills-3 .hardskills-3_section .hardskills-section_4 .bxl-php, .hardskills-3 .hardskills-3_section .hardskills-section_4 .bxl-react, .hardskills-3 .hardskills-3_section .hardskills-section_4 .bxl-nodejs {
+        color: rgba(236, 219, 186, 0.7);
+        font-size: 100px;
+        padding: 0px 10px; }
+    .hardskills-3 .hardskills-3_section .hardskills-section_5 {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: none; }
+      .hardskills-3 .hardskills-3_section .hardskills-section_5 .bxs-data, .hardskills-3 .hardskills-3_section .hardskills-section_5 .bxl-python, .hardskills-3 .hardskills-3_section .hardskills-section_5 .bxl-angular {
+        color: rgba(236, 219, 186, 0.7);
+        font-size: 100px;
+        padding: 0px 10px; }
+    .hardskills-3 .hardskills-3_section .bx-code-alt {
+      color: rgba(236, 219, 186, 0.7);
+      font-size: 70px;
+      margin: 43px 0px;
+      position: relative;
+      top: 45px; }
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .portfolio .portfolio-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 475px;
+    background-color: rgba(236, 219, 186, 0.7);
+    width: 100%; }
+    @media (max-width: 768px) {
+      .portfolio .portfolio-section {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: rgba(236, 219, 186, 0.7); } }
+    .portfolio .portfolio-section .portfolio-h2 {
       color: black;
       font-size: 50px; }
+
+.portfolio-difx {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .portfolio-difx .difx-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 475px;
+    background-color: rgba(200, 75, 49, 0.7);
+    height: 320px;
+    width: 100%; }
+    .portfolio-difx .difx-section .difx {
+      font-family: Bleach;
+      border: solid 1px white;
+      padding: 5px 20px;
+      color: white;
+      font-size: 80px; }
+    .portfolio-difx .difx-section .difx-p {
+      color: white;
+      font-size: 15px;
+      text-align: center;
+      margin: 10px 0px; }
+
+.portfolio-myC {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .portfolio-myC .myC-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 475px;
+    background-color: rgba(45, 66, 99, 0.7);
+    height: 300px;
+    width: 100%; }
+    .portfolio-myC .myC-section .myC-h2 {
+      border: solid 1px white;
+      padding: 5px 20px;
+      color: white;
+      font-size: 35px; }
+    .portfolio-myC .myC-section .myC-p {
+      color: white;
+      font-size: 15px;
+      text-align: center;
+      margin: 10px 0px; }
+
+.visitMe-github .difx-github {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-size: 40px;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.2); }
+  .visitMe-github .difx-github span {
+    margin: 0px 5px;
+    font-size: 20px; }

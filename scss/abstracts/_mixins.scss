@@ -58,3 +58,20 @@
     height: 475px;
     background-color: $c;
 }
+
+
+@mixin mQuerieWelcome($size){
+    @if $size == mobile{
+        @media (max-width: 768px){
+            @include containerMainS($grisOpaco);
+        } 
+    } @else if $size == desktop{
+        @media (min-width: 768px){
+            @include containerMainP($grisOpaco)
+        }
+    } @else if $size == special{
+        @media (max-width: 768px){
+            @include containerMainP($grisOpaco);
+        }
+    }
+}
