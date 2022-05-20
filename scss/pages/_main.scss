@@ -2,13 +2,15 @@ main{
     grid-area: main;
 }
 
+//About Me//
 .about-me{
-    @include containerMainP($grisOpaco);
+    @include containerMainS($grisOpaco);
     @include flex(column, center, center);
         .about-me_section{
             @include flex(column, center, center);
                 .aboutMe-h2{
                     color: black;
+                    text-align: center;
                     font-size: 45px;
                     font-weight: bold;
                 }
@@ -63,3 +65,18 @@ main{
                 }
         }
 }
+
+//Hardskills//
+.hardskills{
+    @include flex(column, center, center);
+        .hardskills-section{
+            @include flex(column, center, center);
+            @include containerMainS($grisOpaco);
+            width: 100%;
+                .hardskills-h2{
+                    color: rgb(0, 0, 0);
+                    font-size: 50px;
+                }
+        }
+}
+

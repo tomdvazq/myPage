@@ -38,7 +38,8 @@ nav {
   grid-template-rows: span 3;
   position: sticky;
   top: 0px;
-  z-index: 3; }
+  z-index: 3;
+  box-shadow: 0px 0px 5px 0px black; }
   nav .nav-container {
     display: flex;
     flex-direction: row;
@@ -48,8 +49,9 @@ nav {
     height: 80px; }
     nav .nav-container .nav-logo {
       text-decoration: none;
-      font-family: Roboto;
+      font-family: Poppins;
       color: white;
+      font-size: 20px;
       margin: 0px 20px; }
     nav .nav-container .nav-label_img {
       font-size: 3rem;
@@ -95,7 +97,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 475px;
   background-color: rgba(236, 219, 186, 0.7);
   display: flex;
   flex-direction: column;
@@ -108,6 +110,7 @@ main {
     align-items: center; }
     .about-me .about-me_section .aboutMe-h2 {
       color: black;
+      text-align: center;
       font-size: 45px;
       font-weight: bold; }
 
@@ -119,7 +122,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 460px;
+  height: 475px;
   background-color: rgba(200, 75, 49, 0.7); }
   .about-me_2 .about-me_section {
     display: flex;
@@ -151,7 +154,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 460px;
+  height: 475px;
   background-color: rgba(45, 66, 99, 0.7); }
   .about-me_3 .about-me_section {
     display: flex;
@@ -169,3 +172,23 @@ main {
       width: 150px;
       border: solid 2px white;
       border-radius: 50%; }
+
+.hardskills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .hardskills .hardskills-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 475px;
+    background-color: rgba(236, 219, 186, 0.7);
+    width: 100%; }
+    .hardskills .hardskills-section .hardskills-h2 {
+      color: black;
+      font-size: 50px; }
