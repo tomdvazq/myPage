@@ -118,10 +118,22 @@ main {
       text-align: center;
       font-size: 45px;
       font-weight: bold; }
+      @media (min-width: 768px) {
+        .about-me .about-me_section .aboutMe-h1 {
+          font-size: 80px; } }
+      @media (min-width: 600px) and (max-width: 768px) {
+        .about-me .about-me_section .aboutMe-h1 {
+          font-size: 60px; } }
     .about-me .about-me_section .aboutMe-h2 {
       color: black;
       font-size: 25px;
       text-align: center; }
+      @media (min-width: 768px) {
+        .about-me .about-me_section .aboutMe-h2 {
+          font-size: 35px; } }
+      @media (min-width: 600px) and (max-width: 768px) {
+        .about-me .about-me_section .aboutMe-h2 {
+          font-size: 25px; } }
 
 .about-me_2 {
   display: flex;
@@ -140,10 +152,29 @@ main {
     align-items: center; }
     .about-me_2 .about-me_section .aboutMe-h2 {
       color: white;
-      font-size: 20px; }
+      font-size: 20px;
+      text-align: center; }
+      @media (min-width: 768px) {
+        .about-me_2 .about-me_section .aboutMe-h2 {
+          font-size: 50px; } }
+      @media (min-width: 600px) and (max-width: 768px) {
+        .about-me_2 .about-me_section .aboutMe-h2 {
+          font-size: 40px; } }
+      @media (min-width: 400px) and (max-width: 600px) {
+        .about-me_2 .about-me_section .aboutMe-h2 {
+          font-size: 27px; } }
     .about-me_2 .about-me_section .aboutMe-h3 {
       color: white;
       font-size: 15px; }
+      @media (min-width: 768px) {
+        .about-me_2 .about-me_section .aboutMe-h3 {
+          font-size: 25px; } }
+      @media (min-width: 600px) and (max-width: 768px) {
+        .about-me_2 .about-me_section .aboutMe-h3 {
+          font-size: 20px; } }
+      @media (min-width: 400px) and (max-width: 600px) {
+        .about-me_2 .about-me_section .aboutMe-h3 {
+          font-size: 17px; } }
     .about-me_2 .about-me_section .aboutMe-img {
       width: 125px;
       height: 125px;
@@ -214,6 +245,15 @@ main {
       background-color: rgba(0, 0, 0, 0.4);
       padding: 10px;
       font-weight: bold; }
+      @media (min-width: 768px) {
+        .hardskills .hardskills-section .hardskills-h2 {
+          font-size: 80px; } }
+      @media (min-width: 600px) and (max-width: 768px) {
+        .hardskills .hardskills-section .hardskills-h2 {
+          font-size: 60px; } }
+      @media (min-width: 400px) and (max-width: 600px) {
+        .hardskills .hardskills-section .hardskills-h2 {
+          font-size: 50px; } }
 
 .hardskills-2 {
   display: flex;
@@ -309,7 +349,9 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  background: center fixed url(../../media/aboutme.jpg);
+  background-size: cover; }
   .portfolio .portfolio-section {
     display: flex;
     flex-direction: column;
@@ -330,7 +372,19 @@ main {
         background-color: rgba(236, 219, 186, 0.7); } }
     .portfolio .portfolio-section .portfolio-h2 {
       color: black;
-      font-size: 50px; }
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 10px;
+      font-size: 50px;
+      font-weight: bold; }
+      @media (min-width: 768px) {
+        .portfolio .portfolio-section .portfolio-h2 {
+          font-size: 80px; } }
+      @media (min-width: 600px) and (max-width: 768px) {
+        .portfolio .portfolio-section .portfolio-h2 {
+          font-size: 60px; } }
+      @media (min-width: 400px) and (max-width: 600px) {
+        .portfolio .portfolio-section .portfolio-h2 {
+          font-size: 50px; } }
 
 .portfolio-difx {
   display: flex;

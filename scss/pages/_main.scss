@@ -12,11 +12,15 @@ main{
                     color: black;
                     text-align: center;
                     font-size: 45px;
+                    @include h1(tablet);
+                    @include h1(mobileLarge)
                     font-weight: bold;
                 }
                 .aboutMe-h2{
                     color: black;
                     font-size: 25px;
+                    @include p(tablet);
+                    @include p(mobileLarge)
                     text-align: center;
                 }
         }
@@ -30,10 +34,17 @@ main{
                 .aboutMe-h2{
                     color: white;
                     font-size: 20px;
+                    text-align: center;
+                    @include h2(tablet);
+                    @include h2(mobileLarge);
+                    @include h2(mobileMid);
                 }
                 .aboutMe-h3{
                     color: white;
                     font-size: 15px;
+                    @include h3(tablet);
+                    @include h3(mobileLarge);
+                    @include h3(mobileMid);
                 }
                 .aboutMe-img{
                     width: 125px;
@@ -88,6 +99,9 @@ main{
                     background-color: rgba(0,0,0,0.4);
                     padding: 10px;
                     font-weight: bold;
+                    @include hardskills(tablet);
+                    @include hardskills(mobileLarge);
+                    @include hardskills(mobileMid);
                 }
         }
 }
@@ -178,6 +192,8 @@ main{
 //Portfolio// 
 .portfolio{
     @include flex(column, center, center);
+    background: center fixed url(../../media/aboutme.jpg);
+    background-size: cover;
     .portfolio-section{
         @include flex(column, center, center);
         @include containerMainS($grisOpaco);
@@ -185,7 +201,13 @@ main{
         width: 100%;
             .portfolio-h2{
                 color: rgb(0, 0, 0);
+                background-color: rgba(0,0,0,0.4);
+                padding: 10px;
                 font-size: 50px;
+                font-weight: bold;
+                @include hardskills(tablet);
+                @include hardskills(mobileLarge);
+                @include hardskills(mobileMid);
             }
 }
 }
