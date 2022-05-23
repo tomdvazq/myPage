@@ -12,8 +12,8 @@ body {
   font-family: Poppins; }
 
 @font-face {
-  font-family: Roboto;
-  src: url(../../fonts/RobotoFlex-Regular.ttf); }
+  font-family: PoppinsBold;
+  src: url(../../fonts/Poppins-ExtraBold.ttf); }
 
 @font-face {
   font-family: Poppins;
@@ -98,7 +98,7 @@ header {
 main {
   grid-area: main; }
 
-.about-me {
+.home {
   height: 100vh;
   background-color: #8BC6EC;
   background-image: linear-gradient(135deg, #8BC6EC 0%, #c295e2 100%);
@@ -106,22 +106,70 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
-  .about-me h1 {
-    grid-column: 2;
-    grid-row: 2;
-    font-size: 135px;
-    text-align: center; }
-  .about-me .continue {
-    grid-column: 2;
-    grid-row: 3;
+  .home img {
+    background: transparent;
+    box-shadow: 0 5px 15px 0 rgba(39, 142, 166, 0.3);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    border-radius: 10px;
+    padding: 10px 20px;
+    border-radius: 50%; }
+    @media (max-width: 992px) {
+      .home img {
+        width: 300px;
+        height: 300px; } }
+    @media (max-width: 600px) {
+      .home img {
+        width: 250px;
+        height: 250px; } }
+  .home h1 {
+    font-size: 135px; }
+    @media (max-width: 992px) {
+      .home h1 {
+        font-size: 90px; } }
+    @media (max-width: 600px) {
+      .home h1 {
+        font-size: 50px; } }
+    .home h1 span {
+      text-align: center;
+      font-family: PoppinsBold; }
+  .home .continue {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
-    .about-me .continue p {
+    .home .continue p {
       font-size: 40px; }
-    .about-me .continue .bxs-chevron-down {
+      @media (max-width: 992px) {
+        .home .continue p {
+          font-size: 30px; } }
+  @media (max-width: 992px) and (max-width: 600px) {
+    .home .continue p {
+      font-size: 20px; } }
+      .home .continue p i {
+        text-decoration: line-through; }
+    .home .continue .bx-chevron-down {
       font-size: 40px; }
+
+.about-me {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; }
+  .about-me .about-me_title {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0px 10px; }
+    .about-me .about-me_title h2 {
+      font-size: 120px; }
+    .about-me .about-me_title .h2-rotate {
+      font-size: 100px;
+      transform: rotate(90deg); }
+  .about-me .about-me_data {
+    margin: 0px 10px; }
 
 footer {
   grid-area: footer;

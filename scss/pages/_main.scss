@@ -2,26 +2,72 @@ main{
     grid-area: main;
 }
 
-//About Me//
-.about-me{
+//Home//
+.home{
     @include fondoInicio();
     @include flex(column, center, center);
+            img{
+                @include glassmorphism(shadow);
+                border-radius: 50%;
+                @include mQueriePages(l){
+                    width: 300px;
+                    height: 300px;
+                }
+                @include mQueriePages(s){
+                    width: 250px;
+                    height: 250px;
+                }
+            }
             h1{
-                grid-column: 2;
-                grid-row: 2;
                 font-size: 135px;
-                text-align: center;
+                @include mQueriePages(l){
+                    font-size: 90px;
+                }
+                @include mQueriePages(s){
+                    font-size: 50px;
+                }
+                span{
+                    text-align: center;
+                    font-family: PoppinsBold;
+                }
             }
             .continue{
-            grid-column: 2;
-            grid-row: 3;
             @include flex(column, center, center);
                 p{
                     font-size: 40px;
+                    @include mQueriePages(l){
+                        font-size: 30px;
+                    @include mQueriePages(s){
+                        font-size: 20px;
+                    }
+                    }
+                    i{
+                        text-decoration: line-through;
+                    }
                 }
-                .bxs-chevron-down{
+                .bx-chevron-down{
                     font-size: 40px;
                 }
         }
 }
+
+//About Me//
+.about-me{
+    @include flex(row, space-between, center);
+    flex-wrap: wrap;
+        .about-me_title{
+            @include flex(row, flex-start, center);
+            margin: 0px 10px;
+            h2{
+                font-size: 120px;
+            }
+            .h2-rotate{
+                font-size: 100px;
+                transform: rotate(90deg);
+            }
+        }
+        .about-me_data{
+            margin: 0px 10px;
+        }
+    }
 

@@ -50,10 +50,10 @@
 
 @mixin glassmorphism($g){
     @if $g == shadow{
-    background: rgba( 255, 255, 255, 0.15 );
-    box-shadow: 0 8px 25px 0 rgba( 31, 38, 135, 0.37 );
+    background: transparent;
+    box-shadow: 0 5px 15px 0 rgba(39, 142, 166, 0.3); 
     backdrop-filter: blur( 7px );
-    -webkit-backdrop-filter: blur( 7px );
+    -webkit-backdrop-filter: blur(7px);
     border-radius: 10px;
     padding: 10px 20px;
 } @else if $g == noshadow{
@@ -69,10 +69,10 @@
 
 @mixin mQueriePages($size){
     @if $size == l{
-        @media (min-width: 992px) { @content };
+        @media (max-width: 992px) { @content };
     } @else if $size == m{
-        @media (min-width: 768px) { @content };
+        @media (max-width: 768px) { @content };
     } @else if $size = s{
-        @media (min-width: 600px) { @content };
+        @media (max-width: 600px) { @content };
     }
 }
