@@ -13,11 +13,7 @@
     align-items: $ai;
 };
 
-
-
-
-
-// Hamburger Menu // 
+// Hamburger Menu Media Querie// 
 
 @mixin mQuerie($size){
     @if $size == bars{
@@ -30,7 +26,8 @@
             position: fixed;
             top: 80px;
             bottom: 0;
-            background: map-get($colores, terciario);
+            background-color: #c295e2;
+            background-image: linear-gradient(135deg,#c295e2 0%, #420d67  100%);                                
             width: 100%;
             left: 0;
             @include flex(column, space-evenly, center);
@@ -41,39 +38,41 @@
     }
 }
 
+// Backgrounds // 
+
+@mixin fondoInicio(){
+    height: 100vh;
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #c295e2 100%);    
+}
+
 // Containers Main //
 
-@mixin containerMainP($c){
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: $c;
+@mixin glassmorphism($g){
+    @if $g == shadow{
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 25px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 7px );
+    -webkit-backdrop-filter: blur( 7px );
+    border-radius: 10px;
+    padding: 10px 20px;
+} @else if $g == noshadow{
+    background: rgba( 255, 255, 255, 0.15 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 7px );
+    border-radius: 10px;
+    padding: 10px 20px;
+}
 }
 
-@mixin containerMainS($c){
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 475px;
-    background-color: $c;
-}
+// MQ //
 
-
-@mixin mQuerieWelcome($size){
-    @if $size == mobile{
-        @media (max-width: 768px){
-            @include containerMainS($grisOpaco);
-        } 
-    } @else if $size == desktop{
-        @media (min-width: 768px){
-            @include containerMainP($grisOpaco)
-        }
-    } @else if $size == special{
-        @media (max-width: 768px){
-            @include containerMainP($grisOpaco);
-        }
+@mixin mQueriePages($size){
+    @if $size == l{
+        @media (min-width: 992px) { @content };
+    } @else if $size == m{
+        @media (min-width: 768px) { @content };
+    } @else if $size = s{
+        @media (min-width: 600px) { @content };
     }
 }
-
-// H1-H6 :: About Me//

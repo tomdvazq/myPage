@@ -4,10 +4,24 @@ main{
 
 //About Me//
 .about-me{
-    @include containerMainP($grisOpaco);
+    @include fondoInicio();
     @include flex(column, center, center);
-        .about-me_section{
+            h1{
+                grid-column: 2;
+                grid-row: 2;
+                font-size: 135px;
+                text-align: center;
+            }
+            .continue{
+            grid-column: 2;
+            grid-row: 3;
             @include flex(column, center, center);
+                p{
+                    font-size: 40px;
+                }
+                .bxs-chevron-down{
+                    font-size: 40px;
+                }
         }
 }
 

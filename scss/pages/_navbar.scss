@@ -1,25 +1,24 @@
 header{
     grid-area: header;
     nav{
-        grid-template-rows: span 3;
-        position: sticky;
-        top: 0px;
+        position: fixed;
+        width: 100%;
         z-index: 5;
         box-shadow: 0px 0px 5px 0px black;
             .nav-container{
             @include flex(row, space-between, center);
-            background-color: (map-get($colores, primario));
+            background-color: black;
             height: 80px;
                 .nav-logo{
                     text-decoration: none;
                     font-family: Poppins;
-                    color: map-get($colores, letras);
+                    color: white;
                     font-size: 20px;
                     margin: 0px 20px;
                 }
                 .nav-label_img{
                     font-size: 3rem;
-                    color: map-get($colores, letras);
+                    color: white;
                     margin: 0px 20px;
                 }
                 .nav-ul{
@@ -29,12 +28,11 @@ header{
                 .nav-li{
                     margin: 0px 10px;
                     list-style-type: none;
-                    font-family: Roboto;
                     font-size: 17px;
                 }
                 .nav-a{
                     text-decoration: none;
-                    color: map-get($colores, letras);
+                    color: white;
                 }
                 .nav-label_img, .nav-input{
                     display: none;

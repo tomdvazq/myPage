@@ -1,15 +1,2 @@
-// Map-get de colores principales del sitio web // 
-
-$colores: (
-    // Design //
-    primario: rgb(25, 25, 25),
-    secundario: rgb(45, 66, 99),
-    terciario: rgb(200, 75, 49),
-    cuaternario: rgb(236, 219, 186),
-    // Others //
-    letras: white
-);
-
-$azulOpaco: rgba(45, 66, 99, 0.7);
-$naranjaOpaco: rgba(200, 75, 49, 0.7);
-$grisOpaco: rgba(236, 219, 186, 0.7);
+$azulOpaco: rgb(231, 217, 234);
+$naranjaOpaco: rgb(198, 155, 123);

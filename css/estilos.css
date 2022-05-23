@@ -40,9 +40,8 @@ footer {
 header {
   grid-area: header; }
   header nav {
-    grid-template-rows: span 3;
-    position: sticky;
-    top: 0px;
+    position: fixed;
+    width: 100%;
     z-index: 5;
     box-shadow: 0px 0px 5px 0px black; }
     header nav .nav-container {
@@ -50,7 +49,7 @@ header {
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
-      background-color: #191919;
+      background-color: black;
       height: 80px; }
       header nav .nav-container .nav-logo {
         text-decoration: none;
@@ -69,7 +68,8 @@ header {
             position: fixed;
             top: 80px;
             bottom: 0;
-            background: #c84b31;
+            background-color: #c295e2;
+            background-image: linear-gradient(135deg, #c295e2 0%, #420d67 100%);
             width: 100%;
             left: 0;
             display: flex;
@@ -82,7 +82,6 @@ header {
       header nav .nav-container .nav-li {
         margin: 0px 10px;
         list-style-type: none;
-        font-family: Roboto;
         font-size: 17px; }
       header nav .nav-container .nav-a {
         text-decoration: none;
@@ -100,20 +99,29 @@ main {
   grid-area: main; }
 
 .about-me {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   height: 100vh;
-  background-color: rgba(236, 219, 186, 0.7);
+  background-color: #8BC6EC;
+  background-image: linear-gradient(135deg, #8BC6EC 0%, #c295e2 100%);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; }
-  .about-me .about-me_section {
+  .about-me h1 {
+    grid-column: 2;
+    grid-row: 2;
+    font-size: 135px;
+    text-align: center; }
+  .about-me .continue {
+    grid-column: 2;
+    grid-row: 3;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
+    .about-me .continue p {
+      font-size: 40px; }
+    .about-me .continue .bxs-chevron-down {
+      font-size: 40px; }
 
 footer {
   grid-area: footer;
