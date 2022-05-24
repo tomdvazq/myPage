@@ -67,7 +67,17 @@ main{
             }
         }
         .about-me_data{
-            margin: 0px 10px;
+            margin: 10px;
+            .data-1{
+            }
+            .data-2{
+                margin: 10px 0px;
+            }
+            .data-3{
+                a{
+                    color: black;
+                }
+            }
         }
     }
 

@@ -169,7 +169,11 @@ main {
       font-size: 100px;
       transform: rotate(90deg); }
   .about-me .about-me_data {
-    margin: 0px 10px; }
+    margin: 10px; }
+    .about-me .about-me_data .data-2 {
+      margin: 10px 0px; }
+    .about-me .about-me_data .data-3 a {
+      color: black; }
 
 footer {
   grid-area: footer;
