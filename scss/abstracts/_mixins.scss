@@ -68,12 +68,18 @@
 
 @mixin mQueriePages($size){
     @if $size == l{
-        @media (max-width: 992px) { @content };
+        @media (max-width: 1020px) { @content };
     } @else if $size == m{
         @media (max-width: 768px) { @content };
     } @else if $size == s{
         @media (max-width: 600px) { @content };
     } @else if $size == xl{
         @media (max-width: 1480px) { @content };
+    } @else if $size == desktopL{
+        @media (max-width: 1200px) { @content };
+    } @else if $size == mobileFirst{
+        @media (max-width: 552px) { @content };
+    } @else if $size == mobileSecond{
+        @media (max-width: 451px) { @content };
     }
 }

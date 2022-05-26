@@ -4,7 +4,6 @@ main{
 
 //Home//
 .home{
-    background: center url(../../media/background-aq.png);
     background-size: cover;
     height: 100vh;
     border-bottom: solid 1px black;
@@ -60,13 +59,23 @@ main{
     background-size: cover;
     @include flex(row, space-between, center);
     flex-wrap: wrap;
+    @include mQueriePages(l){
+        flex-direction: column;
+        justify-content: center;
+    }
         .about-me_title{
             @include flex(row, flex-start, center);
             margin: 0px 10px;
+            @include mQueriePages(l){
+                margin: 20px 0px;
+            }
             h2{
                 font-size: 120px;
                 @include mQueriePages(xl){
                     font-size: 90px;
+                }
+                @include mQueriePages (mobileSecond){
+                    font-size: 70px;
                 }
             }
             .h2-rotate{
@@ -75,6 +84,9 @@ main{
                 @include mQueriePages(xl){
                     font-size: 75px;
                 }
+                @include mQueriePages (mobileSecond){
+                    font-size: 50px;
+                }
             }
         }
         .about-me_im{
@@ -82,10 +94,16 @@ main{
                 p{
                     font-size: 20px;
                     color: black;
+                    @include mQueriePages(xl){
+                        font-size: 15px;
+                    }
+                    @include mQueriePages(l){
+                        font-size: 20px;
+                    }
+                    @include mQueriePages (mobileSecond){
+                        font-size: 15px;
+                    }
                 }
-            @include mQueriePages(xl){
-                font-size: 15px;
-            }
         }
 }
 
@@ -99,6 +117,16 @@ main{
     align-items: center;
     flex-direction: column;
     border-left: solid 1px black;
+    @include mQueriePages(xl){
+        width: 500px;
+    }
+    @include mQueriePages(desktopL){
+        width: 400px;
+    }
+    @include mQueriePages(l){
+        border-left: none;
+        width: 100vw;
+    }
         .aboutMe-data_container{
             height: auto;
             width: 100%;
@@ -107,7 +135,9 @@ main{
             transition: 0.5s;
             cursor: pointer;
             background-color: transparent;
-            @include glassmorphism(noshadow);
+            @include mQueriePages(xl){
+                padding: 0px;
+            }
         }
         .aboutMe-data_collapse{
             height: 100px;
@@ -125,6 +155,17 @@ main{
                         &:active{
                             color: rgb(35, 113, 231);
                         }
+                    @include mQueriePages(xl){
+                        font-size: 16px;
+                    }
+                    @include mQueriePages (mobileSecond){
+                        font-size: 13px;
+                    }
+                    span{
+                        @include mQueriePages (mobileSecond){
+                            display: none;
+                        }
+                    }
                 }
         }
         .aboutMe-answer{
@@ -144,6 +185,24 @@ main{
         .open{
             height: 170px;
             transform: translateY(0);
+            @include mQueriePages(xl){
+                height: 230px;
+            }
+            @include mQueriePages(desktopL){
+                height: 270px;
+            }
+            @include mQueriePages(l){
+                height: 120px;
+            }
+            @include mQueriePages(m){
+                height: 160px;
+            }
+            @include mQueriePages (mobileFirst){
+                height: 220px;
+            }
+            @include mQueriePages (mobileSecond){
+                height: 270px;
+            }
         }
         .arrow-container{
             width: 40px;
