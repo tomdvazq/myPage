@@ -4,7 +4,10 @@ main{
 
 //Home//
 .home{
-    @include fondoInicio();
+    background: center url(../../media/background-aq.png);
+    background-size: cover;
+    height: 100vh;
+    border-bottom: solid 1px black;
     @include flex(column, center, center);
             img{
                 @include glassmorphism(shadow);
@@ -52,7 +55,9 @@ main{
 }
 
 //About Me//
+
 .about-me{
+    background-size: cover;
     @include flex(row, space-between, center);
     flex-wrap: wrap;
         .about-me_title{
@@ -60,24 +65,113 @@ main{
             margin: 0px 10px;
             h2{
                 font-size: 120px;
+                @include mQueriePages(xl){
+                    font-size: 90px;
+                }
             }
             .h2-rotate{
                 font-size: 100px;
                 transform: rotate(90deg);
-            }
-        }
-        .about-me_data{
-            margin: 10px;
-            .data-1{
-            }
-            .data-2{
-                margin: 10px 0px;
-            }
-            .data-3{
-                a{
-                    color: black;
+                @include mQueriePages(xl){
+                    font-size: 75px;
                 }
             }
         }
-    }
+        .about-me_im{
+            text-align: center;
+                p{
+                    font-size: 20px;
+                    color: black;
+                }
+            @include mQueriePages(xl){
+                font-size: 15px;
+            }
+        }
+}
+
+//Data Accordeon//
+
+.about-me_data{
+    width: 600px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-left: solid 1px black;
+        .aboutMe-data_container{
+            height: auto;
+            width: 100%;
+            padding: 10px;
+            position: relative;
+            transition: 0.5s;
+            cursor: pointer;
+            background-color: transparent;
+            @include glassmorphism(noshadow);
+        }
+        .aboutMe-data_collapse{
+            height: 100px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 40px;
+            box-sizing: border-box;
+            background-color: transparent;
+            overflow: hidden;
+                .aboutMe-sentence{
+                    font-size: 20px;
+                    font-weight: bold;
+                        &:active{
+                            color: rgb(35, 113, 231);
+                        }
+                }
+        }
+        .aboutMe-answer{
+            overflow: hidden;
+            transition: .5s;
+            height: 0;
+                p{
+                    padding: 0px 40px;
+                    box-sizing: border-box;
+                    font-size: 15px;
+                    color: black;
+                        a{
+                            color: black;
+                        }
+                }
+        }
+        .open{
+            height: 170px;
+            transform: translateY(0);
+        }
+        .arrow-container{
+            width: 40px;
+            height: 30px;
+            position: relative;
+        }
+        .up .line{
+            transform: translate(0%, -50%) rotate(-45deg);
+        }
+        .up .line:nth-of-type(2){
+            transform: translate(0%, -50%) rotate(45deg);
+        }
+        
+        .line{
+            height: 1px;
+            width: 50%;
+            position: absolute;
+            background-color: #121212;
+            position: absolute;
+            top: 50%;
+            left: 8%;
+            transform: translate(0%, -50%) rotate(45deg);
+        }
+        
+        .line:nth-of-type(2){
+            right: 8%;
+            left: auto;
+            transform: translate(0%, -50%) rotate(-45deg);
+        }
+}
 
