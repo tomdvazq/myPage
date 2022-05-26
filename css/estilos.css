@@ -11,6 +11,98 @@ html {
 body {
   font-family: Poppins; }
 
+.load-center {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white; }
+
+.hidden {
+  overflow: hidden; }
+
+.lds-roller {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px; }
+
+.lds-roller div {
+  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: 40px 40px; }
+
+.lds-roller div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: black;
+  margin: -4px 0 0 -4px; }
+
+.lds-roller div:nth-child(1) {
+  animation-delay: -0.036s; }
+
+.lds-roller div:nth-child(1):after {
+  top: 63px;
+  left: 63px; }
+
+.lds-roller div:nth-child(2) {
+  animation-delay: -0.072s; }
+
+.lds-roller div:nth-child(2):after {
+  top: 68px;
+  left: 56px; }
+
+.lds-roller div:nth-child(3) {
+  animation-delay: -0.108s; }
+
+.lds-roller div:nth-child(3):after {
+  top: 71px;
+  left: 48px; }
+
+.lds-roller div:nth-child(4) {
+  animation-delay: -0.144s; }
+
+.lds-roller div:nth-child(4):after {
+  top: 72px;
+  left: 40px; }
+
+.lds-roller div:nth-child(5) {
+  animation-delay: -0.18s; }
+
+.lds-roller div:nth-child(5):after {
+  top: 71px;
+  left: 32px; }
+
+.lds-roller div:nth-child(6) {
+  animation-delay: -0.216s; }
+
+.lds-roller div:nth-child(6):after {
+  top: 68px;
+  left: 24px; }
+
+.lds-roller div:nth-child(7) {
+  animation-delay: -0.252s; }
+
+.lds-roller div:nth-child(7):after {
+  top: 63px;
+  left: 17px; }
+
+.lds-roller div:nth-child(8) {
+  animation-delay: -0.288s; }
+
+.lds-roller div:nth-child(8):after {
+  top: 56px;
+  left: 12px; }
+
+@keyframes lds-roller {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
 @font-face {
   font-family: PoppinsBold;
   src: url(../../fonts/Poppins-ExtraBold.ttf); }
@@ -153,6 +245,7 @@ main {
 
 .about-me {
   background-size: cover;
+  border-bottom: solid 1px black;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -179,8 +272,6 @@ main {
       @media (max-width: 600px) {
         .about-me .about-me_title h2 {
           font-size: 70px; } }
-    .about-me .about-me_title .h2-about {
-      text-decoration: line-through; }
     .about-me .about-me_title .h2-rotate {
       font-size: 100px;
       transform: rotate(90deg); }
@@ -314,6 +405,66 @@ main {
     right: 8%;
     left: auto;
     transform: translate(0%, -50%) rotate(-45deg); }
+
+.hard-skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
+  .hard-skills .hardskills-title h2 {
+    font-size: 120px;
+    text-decoration: underline; }
+    @media (max-width: 1480px) {
+      .hard-skills .hardskills-title h2 {
+        font-size: 90px; } }
+    @media (max-width: 600px) {
+      .hard-skills .hardskills-title h2 {
+        font-size: 70px; } }
+  .hard-skills .hardskills-logos {
+    display: inline-flex;
+    font-size: 120px;
+    margin: 15px 0px; }
+    .hard-skills .hardskills-logos .html .bxl-html5 {
+      border: solid 2px black;
+      border-radius: 50%;
+      padding: 25px;
+      cursor: pointer; }
+      .hard-skills .hardskills-logos .html .bxl-html5:hover {
+        transition: 1s;
+        color: #E44D26;
+        border-color: #E44D26;
+        box-shadow: 0 0 5px #E44D26; }
+    .hard-skills .hardskills-logos .html h4 {
+      font-size: 25px;
+      text-align: center; }
+    .hard-skills .hardskills-logos .css .bxl-css3 {
+      margin: 0px 150px;
+      border: solid 2px black;
+      border-radius: 50%;
+      padding: 25px;
+      cursor: pointer; }
+      .hard-skills .hardskills-logos .css .bxl-css3:hover {
+        transition: 1s;
+        color: #009BDE;
+        border-color: #009BDE;
+        box-shadow: 0 0 5px #009BDE; }
+    .hard-skills .hardskills-logos .css h4 {
+      font-size: 25px;
+      text-align: center; }
+    .hard-skills .hardskills-logos .js .bxl-javascript {
+      border: solid 2px black;
+      border-radius: 50%;
+      padding: 25px;
+      cursor: pointer; }
+      .hard-skills .hardskills-logos .js .bxl-javascript:hover {
+        transition: 1s;
+        color: #f7df1e;
+        border-color: #f7df1e;
+        box-shadow: 0 0 5px #f7df1e; }
+    .hard-skills .hardskills-logos .js h4 {
+      font-size: 25px;
+      text-align: center; }
 
 footer {
   grid-area: footer;

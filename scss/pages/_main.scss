@@ -54,10 +54,11 @@ main{
         }
 }
 
-//About Me//
+    //About Me//
 
 .about-me{
     background-size: cover;
+    border-bottom: solid 1px black;
     @include flex(row, space-between, center);
     flex-wrap: wrap;
     @include mQueriePages(l){
@@ -80,7 +81,6 @@ main{
                 }
             }
             .h2-about{
-                text-decoration: line-through;
             }
             .h2-rotate{
                 font-size: 100px;
@@ -113,8 +113,8 @@ main{
                 }
         }
 }
-
-//Data Accordeon//
+    //About Me//
+        //Data Accordeon//
 
 .about-me_data{
     width: 600px;
@@ -241,3 +241,80 @@ main{
         }
 }
 
+    //Hardskills//
+.hard-skills{
+    @include flex(column, center, center);
+    flex-wrap: wrap;
+        .hardskills-title{
+            h2{
+                font-size: 120px;
+                text-decoration: underline;
+                @include mQueriePages(xl){
+                    font-size: 90px;
+                }
+                @include mQueriePages (s){
+                    font-size: 70px;
+                }
+            }
+        }
+        .hardskills-logos{
+            display: inline-flex;
+            font-size: 120px;
+            margin: 15px 0px;
+                .html{
+                    .bxl-html5{
+                        border: solid 2px black;
+                        border-radius: 50%;
+                        padding: 25px;
+                        cursor: pointer;
+                            &:hover{
+                                transition: 1s;
+                                color: #E44D26;
+                                border-color: #E44D26;
+                                box-shadow: 0 0 5px #E44D26;
+                            }
+                    }
+                    h4{
+                        font-size: 25px;
+                        text-align: center;
+                    }
+                }
+                .css{
+                    .bxl-css3{
+                        margin: 0px 150px;
+                        border: solid 2px black;
+                        border-radius: 50%;
+                        padding: 25px;
+                        cursor: pointer;
+                            &:hover{
+                                transition: 1s;
+                                color: #009BDE;
+                                border-color: #009BDE;
+                                box-shadow: 0 0 5px #009BDE;
+                            }
+                    }
+                    h4{
+                        font-size: 25px;
+                        text-align: center;
+                    }
+                }
+                .js{
+                    .bxl-javascript{
+                        border: solid 2px black;
+                        border-radius: 50%;
+                        padding: 25px;
+                        cursor: pointer;
+                            &:hover{
+                                transition: 1s;
+                                color: #f7df1e;
+                                border-color: #f7df1e;
+                                box-shadow: 0 0 5px #f7df1e;
+                            }
+                    }
+                    h4{
+                        font-size: 25px;
+                        text-align: center;
+                    }
+                }
+        }
+}

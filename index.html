@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,22 +11,35 @@
     <link href="../css/estilos.css" rel="stylesheet">
     <title>Home | @tomdvazq</title>
 </head>
-<body>
+
+<body class="hidden">
+    <div class="load-center" id="onload">
+        <div class="lds-roller">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
     <div class="grid-container">
         <!-- Navbar -->
         <header>
             <nav>
                 <div class="nav-container">
-    
+
                     <!-- LOGO -->
                     <a href="index.html" class="nav-logo">@tomdvazq</a>
-    
+
                     <!-- NAV HAMBURGUER MOBILE/TABLET -->
-                    <label for="menu"" class="nav-label">
+                    <label for="menu"" class=" nav-label">
                         <i class='bx bx-menu nav-label_img'></i>
                     </label>
                     <input type="checkbox" id="menu" class="nav-input">
-    
+
                     <!-- NAV MENU -->
                     <ul class="nav-ul">
                         <li class="nav-li"><a href="#welcome" class="nav-a">Home</a></li>
@@ -71,7 +85,8 @@
                             <!-- First of all -->
                             <div class="aboutMe-data_container first">
                                 <div class="aboutMe-data_collapse">
-                                    <h3 class="aboutMe-sentence">First of all, thank you for visiting my site <span>&#128591;</span></h3>
+                                    <h3 class="aboutMe-sentence">First of all, thank you for visiting my site
+                                        <span>&#128591;</span></h3>
                                     <div class="arrow-container">
                                         <span class="line"></span>
                                         <span class="line"></span>
@@ -79,12 +94,14 @@
                                 </div>
                                 <div class="aboutMe-answer">
                                     <p>
-                                        My name is <b>Tomás</b>, I'm 23 years old and I'm from Argentina. 
+                                        My name is <b>Tomás</b>, I'm 23 years old and I'm from Argentina.
                                         Since I finished high school I went through many places to get here.
-                                        The IT world has always been close to me, but for a long time I resisted getting to know it in depth.
+                                        The IT world has always been close to me, but for a long time I resisted getting
+                                        to know it in depth.
                                     </p>
                                     <p>
-                                        <i>But always, sooner or later, one arrives at the port where one must arrive.</i>
+                                        <i>But always, sooner or later, one arrives at the port where one must
+                                            arrive.</i>
                                     </p>
                                 </div>
                             </div>
@@ -92,38 +109,70 @@
                             <!-- How did I learn about programming?-->
                             <div class="aboutMe-data_container">
                                 <div class="aboutMe-data_collapse">
-                                        <h3 class="aboutMe-sentence">How did I learn about programming? <span>&#128187;</span></h3>
-                                        <div class="arrow-container">
-                                            <span class="line"></span>
-                                            <span class="line"></span>
-                                        </div>
+                                    <h3 class="aboutMe-sentence">How did I learn about programming?
+                                        <span>&#128187;</span></h3>
+                                    <div class="arrow-container">
+                                        <span class="line"></span>
+                                        <span class="line"></span>
+                                    </div>
                                 </div>
                                 <div class="aboutMe-answer">
-                                        <p>
-                                            My first approach was at the age of nine when I set up a personal version of <b>Habbo Hotel</b>, a multiplayer game that had released its code so that players could create their own versions.
-                                        </p>
-                                        <p>
-                                            Without really knowing what I was doing I started using PHP and SQL to be able to host users within my version of the game. Not knowing so much about it, it was obviously hacked at the time. <span>&#128514;</span>
-                                        </p>
+                                    <p>
+                                        My first approach was at the age of nine when I set up a personal version of
+                                        <b>Habbo Hotel</b>, a multiplayer game that had released its code so that
+                                        players could create their own versions.
+                                    </p>
+                                    <p>
+                                        Without really knowing what I was doing I started using PHP and SQL to be able
+                                        to host users within my version of the game. Not knowing so much about it, it
+                                        was obviously hacked at the time. <span>&#128514;</span>
+                                    </p>
                                 </div>
                             </div>
 
                             <!-- Studies -->
                             <div class="aboutMe-data_container">
                                 <div class="aboutMe-data_collapse">
-                                        <h3 class="aboutMe-sentence">Studies <span>&#128218;</span></h3>
-                                        <div class="arrow-container">
-                                            <span class="line"></span>
-                                            <span class="line"></span>
-                                        </div>
+                                    <h3 class="aboutMe-sentence">Studies <span>&#128218;</span></h3>
+                                    <div class="arrow-container">
+                                        <span class="line"></span>
+                                        <span class="line"></span>
+                                    </div>
                                 </div>
                                 <div class="aboutMe-answer">
-                                        <p>
-                                            I started studying in a self-taught way via <b><a href="https://youtube.com" target="_blank">YouTube</a></b> with various tutorials that I found on the platform, thanks to this I got to know <b><a href="https://freecodecamp.com/" target="_blank"">freeCodeCamp</a></b> and took the HTML and CSS course. It was in <i>March 2022</i> that I decided to get serious and started studying at <b><a href="https://coderhouse.com/" target="_blank">CoderHouse</a></b> academy, getting certified as a web developer. Currently I continue to take courses at CoderHouse and have created a self-taught habit of learning.
-                                        </p>
+                                    <p>
+                                        I started studying in a self-taught way via <b><a href="https://youtube.com"
+                                                target="_blank">YouTube</a></b> with various tutorials that I found on
+                                        the platform, thanks to this I got to know <b><a
+                                                href="https://freecodecamp.com/"
+                                                target="_blank"">freeCodeCamp</a></b> and took the HTML and CSS course. It was in <i>March 2022</i> that I decided to get serious and started studying at <b><a href="
+                                                https://coderhouse.com/" target="_blank">CoderHouse</a></b> academy,
+                                        getting certified as a web developer. Currently I continue to take courses at
+                                        CoderHouse and have created a self-taught habit of learning.
+                                    </p>
                                 </div>
-                            </div>                                
-                        </div>                        
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Hardskills -->
+                <section class="hard-skills" id="hardskills">
+                    <div class="hardskills-title">
+                        <h2>Hards<span>kills</span></h2>
+                    </div>
+                    <div class="hardskills-logos">
+                        <div class="html">
+                            <i class='bx bxl-html5'></i>
+                            <h4>HTML5</h4>
+                        </div>
+                        <div class="css">
+                            <i class='bx bxl-css3' ></i>
+                            <h4>CSS3</h4>
+                        </div>
+                        <div class="js">
+                            <i class='bx bxl-javascript'></i>
+                            <h4>JavaScript</h4>
+                        </div>
                     </div>
                 </section>
             </div>
@@ -131,12 +180,13 @@
         <!-- Footer -->
         <footer>
             <div class="footer-container">
-                
+
             </div>
         </footer>
     </div>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/code.js"></script>
 </body>
-</html>
 
+</html>

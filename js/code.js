@@ -1,3 +1,8 @@
+window.onload = function(){
+    $('#onload').fadeOut();
+    $('body').removeClass('hidden');
+}
+
 //Acordeón//
 
 let collapsibles = document.querySelectorAll('.aboutMe-data_container')
