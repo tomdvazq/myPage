@@ -4,6 +4,7 @@ main{
 
 //Home//
 .home{
+    background: center url(../../media/background-init.png);
     background-size: cover;
     height: 100vh;
     border-bottom: solid 1px black;
@@ -67,16 +68,19 @@ main{
             @include flex(row, flex-start, center);
             margin: 0px 10px;
             @include mQueriePages(l){
-                margin: 20px 0px;
+                margin-top: 20px;
             }
             h2{
                 font-size: 120px;
                 @include mQueriePages(xl){
                     font-size: 90px;
                 }
-                @include mQueriePages (mobileSecond){
+                @include mQueriePages (s){
                     font-size: 70px;
                 }
+            }
+            .h2-about{
+                text-decoration: line-through;
             }
             .h2-rotate{
                 font-size: 100px;
@@ -84,13 +88,16 @@ main{
                 @include mQueriePages(xl){
                     font-size: 75px;
                 }
-                @include mQueriePages (mobileSecond){
+                @include mQueriePages (s){
                     font-size: 50px;
                 }
             }
         }
         .about-me_im{
             text-align: center;
+            @include mQueriePages(l){
+                margin: 10px 0px;
+            }
                 p{
                     font-size: 20px;
                     color: black;
@@ -100,7 +107,7 @@ main{
                     @include mQueriePages(l){
                         font-size: 20px;
                     }
-                    @include mQueriePages (mobileSecond){
+                    @include mQueriePages (s){
                         font-size: 15px;
                     }
                 }

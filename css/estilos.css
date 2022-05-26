@@ -67,8 +67,8 @@ header {
             position: fixed;
             top: 80px;
             bottom: 0;
-            background-color: #c295e2;
-            background-image: linear-gradient(135deg, #c295e2 0%, #420d67 100%);
+            background-color: rgba(0, 0, 0, 0.9);
+            font-family: PoppinsBold;
             width: 100%;
             left: 0;
             display: flex;
@@ -98,6 +98,7 @@ main {
   grid-area: main; }
 
 .home {
+  background: center url(../../media/background-init.png);
   background-size: cover;
   height: 100vh;
   border-bottom: solid 1px black;
@@ -169,26 +170,31 @@ main {
     margin: 0px 10px; }
     @media (max-width: 1020px) {
       .about-me .about-me_title {
-        margin: 20px 0px; } }
+        margin-top: 20px; } }
     .about-me .about-me_title h2 {
       font-size: 120px; }
       @media (max-width: 1480px) {
         .about-me .about-me_title h2 {
           font-size: 90px; } }
-      @media (max-width: 451px) {
+      @media (max-width: 600px) {
         .about-me .about-me_title h2 {
           font-size: 70px; } }
+    .about-me .about-me_title .h2-about {
+      text-decoration: line-through; }
     .about-me .about-me_title .h2-rotate {
       font-size: 100px;
       transform: rotate(90deg); }
       @media (max-width: 1480px) {
         .about-me .about-me_title .h2-rotate {
           font-size: 75px; } }
-      @media (max-width: 451px) {
+      @media (max-width: 600px) {
         .about-me .about-me_title .h2-rotate {
           font-size: 50px; } }
   .about-me .about-me_im {
     text-align: center; }
+    @media (max-width: 1020px) {
+      .about-me .about-me_im {
+        margin: 10px 0px; } }
     .about-me .about-me_im p {
       font-size: 20px;
       color: black; }
@@ -198,7 +204,7 @@ main {
       @media (max-width: 1020px) {
         .about-me .about-me_im p {
           font-size: 20px; } }
-      @media (max-width: 451px) {
+      @media (max-width: 600px) {
         .about-me .about-me_im p {
           font-size: 15px; } }
 

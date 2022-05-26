@@ -26,8 +26,8 @@
             position: fixed;
             top: 80px;
             bottom: 0;
-            background-color: #c295e2;
-            background-image: linear-gradient(135deg,#c295e2 0%, #420d67  100%);                                
+            background-color: rgba(0, 0, 0, 0.9);  
+            font-family: PoppinsBold;                     
             width: 100%;
             left: 0;
             @include flex(column, space-evenly, center);
