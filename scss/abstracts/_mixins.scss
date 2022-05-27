@@ -57,10 +57,17 @@
     border-radius: 10px;
     padding: 10px 20px;
 } @else if $g == noshadow{
-    background: rgba( 255, 255, 255, 0.15 );
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 7px );
+    background: transparent;
+    box-shadow: 5px 5px 5px 0 rgba(39, 142, 166, 0.3); 
+    backdrop-filter: blur( 7px );
+    -webkit-backdrop-filter: blur(7px);
+    border-radius: 10px;
     padding: 10px 20px;
+} @else if $g = readmore{
+    background: transparent;
+    box-shadow: 1px 1px 3px 0 rgba(103, 103, 103, 0.3); 
+    backdrop-filter: blur( 7px );
+    -webkit-backdrop-filter: blur(7px);
 }
 }
 
