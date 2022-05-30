@@ -411,7 +411,8 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  border-bottom: solid 1px black; }
   .hard-skills .hardskills-title h2 {
     font-size: 120px;
     text-decoration: underline; }

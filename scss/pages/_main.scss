@@ -245,6 +245,7 @@ main{
 .hard-skills{
     @include flex(column, center, center);
     flex-wrap: wrap;
+    border-bottom: solid 1px black;
         .hardskills-title{
             h2{
                 font-size: 120px;
