@@ -190,8 +190,7 @@ main {
   grid-area: main; }
 
 .home {
-  background: center url(../../media/background-init.png);
-  /* ../../media/background-init.png */
+  background: center url(../media/background-init.png);
   background-size: cover;
   height: 100vh;
   border-bottom: solid 1px black;
@@ -501,8 +500,7 @@ main {
       border-radius: 10px;
       padding: 10px 20px;
       margin: 10px 0px;
-      width: 90%;
-      max-width: 100vw;
+      width: 100%;
       padding: 1em; }
       .hard-skills .hardskills-readmore .hide ul {
         width: 100%;
@@ -535,9 +533,11 @@ main {
         background-color: #19B3B8; }
       .hard-skills .hardskills-readmore .hide li.sass.active {
         background-color: #D56EA3; }
+      .hard-skills .hardskills-readmore .hide li.css-pure.active {
+        background-color: #009BDE; }
       .hard-skills .hardskills-readmore .hide .container {
         min-width: 100%;
-        min-height: 25vh;
+        min-height: 30vh;
         position: relative; }
       .hard-skills .hardskills-readmore .hide .block {
         margin: 1em 0em;
@@ -546,6 +546,15 @@ main {
         top: 0;
         opacity: 0;
         transition: all .5 ease; }
+        .hard-skills .hardskills-readmore .hide .block h5 {
+          font-size: 20px;
+          text-decoration: underline;
+          margin-bottom: 10px; }
+          .hard-skills .hardskills-readmore .hide .block h5 a {
+            text-decoration: none;
+            color: black; }
+        .hard-skills .hardskills-readmore .hide .block p {
+          margin: 10px 0px; }
       .hard-skills .hardskills-readmore .hide .block.active {
         opacity: 1; }
     .hard-skills .hardskills-readmore .show {

@@ -4,7 +4,7 @@ main{
 
 //Home//
 .home{
-    background: center url(../../media/background-init.png); /* ../../media/background-init.png */
+    background: center url(../media/background-init.png); 
     background-size: cover;
     height: 100vh;
     border-bottom: solid 1px black;
@@ -347,8 +347,7 @@ main{
             display: none;
             @include glassmorphism(shadow);
             margin: 10px 0px;
-            width: 90%;
-            max-width: 100vw;
+            width: 100%;
             padding: 1em;
                 ul{
                     width: 100%;
@@ -380,9 +379,12 @@ main{
                 li.sass.active{
                     background-color: #D56EA3;
                 }
+                li.css-pure.active{
+                    background-color: #009BDE;
+                }
                 .container{
                     min-width: 100%;
-                    min-height: 25vh;
+                    min-height: 30vh;
                     position: relative;
                 }
                 .block{
@@ -392,7 +394,17 @@ main{
                     top: 0;
                     opacity: 0;
                     transition: all .5 ease;
+                        h5{
+                            font-size: 20px;
+                            text-decoration: underline;
+                            margin-bottom: 10px;
+                            a{
+                                text-decoration: none;
+                                color: black;
+                            }
+                        }
                         p{
+                            margin: 10px 0px;
                         }
                 }
                 .block.active{
