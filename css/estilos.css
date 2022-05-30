@@ -105,15 +105,15 @@ body {
 
 @font-face {
   font-family: PoppinsBold;
-  src: url(../../fonts/Poppins-ExtraBold.ttf); }
+  src: url(../fonts/Poppins-ExtraBold.ttf); }
 
 @font-face {
   font-family: Poppins;
-  src: url(../../fonts/Poppins-ExtraLight.ttf); }
+  src: url(../fonts/Poppins-ExtraLight.ttf); }
 
 @font-face {
   font-family: Bleach;
-  src: url(../../fonts/Bleach.ttf); }
+  src: url(../fonts/Bleach.ttf); }
 
 /* Containers */
 .grid-container {
@@ -191,6 +191,7 @@ main {
 
 .home {
   background: center url(../../media/background-init.png);
+  /* ../../media/background-init.png */
   background-size: cover;
   height: 100vh;
   border-bottom: solid 1px black;
