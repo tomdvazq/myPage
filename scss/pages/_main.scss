@@ -256,6 +256,10 @@ main{
                     font-size: 70px;
                 }
             }
+            h4{
+
+                text-align: end;
+            }
         }
         .hardskills-logos{
             display: inline-flex;
@@ -415,6 +419,32 @@ main{
                 transition: all .5 ease;
                 display: block;
             }
+        }
+        .softskills{
+            @include flex(column, center, center)
+            margin-top: 20px;
+                h2{
+                    font-size: 40px;
+                }
+                .softskills-logos{
+                    @include flex(row, center, center);
+                    font-size: 65px;
+                        .git{
+                            &:hover{
+                                transition: .5s;
+                                color: #EF5033;
+                            }
+                        }
+                        .github{
+                            margin: 0px 20px;
+                        }
+                        .visual{
+                            &:hover{
+                                transition: .5s;
+                                color: #3EACF2;
+                            }
+                        }
+                }
         }
 }
 

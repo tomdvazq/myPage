@@ -421,6 +421,8 @@ main {
     @media (max-width: 600px) {
       .hard-skills .hardskills-title h2 {
         font-size: 70px; } }
+  .hard-skills .hardskills-title h4 {
+    text-align: end; }
   .hard-skills .hardskills-logos {
     display: inline-flex;
     font-size: 120px;
@@ -560,6 +562,28 @@ main {
     .hard-skills .hardskills-readmore .show {
       transition: all .5 ease;
       display: block; }
+  .hard-skills .softskills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; }
+    .hard-skills .softskills h2 {
+      font-size: 40px; }
+    .hard-skills .softskills .softskills-logos {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      font-size: 65px; }
+      .hard-skills .softskills .softskills-logos .git:hover {
+        transition: .5s;
+        color: #EF5033; }
+      .hard-skills .softskills .softskills-logos .github {
+        margin: 0px 20px; }
+      .hard-skills .softskills .softskills-logos .visual:hover {
+        transition: .5s;
+        color: #3EACF2; }
 
 .portfolio {
   display: flex;
