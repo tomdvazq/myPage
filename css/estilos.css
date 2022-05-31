@@ -596,6 +596,9 @@ main {
         height: 50px;
         width: 65px;
         border: solid 1px black; }
+        .art .geometry-a .geometry-b .geometry-20:hover {
+          cursor: pointer;
+          background-color: #f7df1e; }
 
 footer {
   grid-area: footer;

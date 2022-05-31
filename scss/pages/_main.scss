@@ -454,8 +454,10 @@ main{
                             height: 50px;
                             width: 65px;
                             border: solid 1px black;
-                        }
-                        .div-1{
+                                &:hover{
+                                    cursor: pointer;
+                                    background-color: #f7df1e;
+                                }
                         }
                 }
         }
