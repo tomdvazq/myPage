@@ -190,7 +190,6 @@ main {
   grid-area: main; }
 
 .home {
-  background: center url(../media/background-init.png);
   background-size: cover;
   height: 100vh;
   border-bottom: solid 1px black;
@@ -568,7 +567,9 @@ main {
   justify-content: space-between;
   align-items: center; }
   .portfolio .portfolio-title {
-    display: flex; }
+    display: flex;
+    justify-content: center;
+    align-items: center; }
     .portfolio .portfolio-title h2 {
       font-size: 120px;
       margin-left: 20px; }
@@ -576,6 +577,10 @@ main {
       font-weight: bold;
       font-size: 120px;
       transform: rotate(90deg); }
+  .portfolio .portfolio-sentence p {
+    font-size: 20px;
+    margin-right: 20px;
+    font-weight: bold; }
 
 footer {
   grid-area: footer;

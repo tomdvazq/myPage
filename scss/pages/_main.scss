@@ -4,7 +4,6 @@ main{
 
 //Home//
 .home{
-    background: center url(../media/background-init.png); 
     background-size: cover;
     height: 100vh;
     border-bottom: solid 1px black;
@@ -426,6 +425,8 @@ main{
     align-items: center;
         .portfolio-title{
             display: flex;
+            justify-content: center;
+            align-items: center;
             h2{
                 font-size: 120px;
                 margin-left: 20px;
@@ -434,6 +435,13 @@ main{
                 font-weight: bold;
                 font-size: 120px;
                 transform: rotate(90deg);
+            }
+        }
+        .portfolio-sentence{
+            p{
+                font-size: 20px;
+                margin-right: 20px;
+                font-weight: bold;
             }
         }
 }
