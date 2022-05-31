@@ -50,3 +50,4 @@ li.forEach((cadaLi, i)=>{
         block[i].classList.add('active')
     })
 })
+

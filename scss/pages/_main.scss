@@ -257,8 +257,11 @@ main{
                 }
             }
             h4{
-
+                position: relative;
+                bottom: 20px;
                 text-align: end;
+                border: solid 1px black;
+                padding: 0px 5px;
             }
         }
         .hardskills-logos{
@@ -421,7 +424,7 @@ main{
             }
         }
         .softskills{
-            @include flex(column, center, center)
+            @include flex(column, center, center);
             margin-top: 20px;
                 h2{
                     font-size: 40px;
@@ -429,6 +432,7 @@ main{
                 .softskills-logos{
                     @include flex(row, center, center);
                     font-size: 65px;
+                    margin-top: 20px;
                         .git{
                             &:hover{
                                 transition: .5s;
@@ -437,6 +441,10 @@ main{
                         }
                         .github{
                             margin: 0px 20px;
+                            &:hover{
+                                transition: .5s;
+                                color: rgb(87, 87, 87);
+                            }
                         }
                         .visual{
                             &:hover{
@@ -447,6 +455,69 @@ main{
                 }
         }
 }
+
+    //Softskills// 
+        //Tooltips// 
+
+        [data-tooltip]{
+            position: relative;
+            cursor: default;
+            &::after{
+                position: absolute;
+                width: 80px;
+                left: calc(50% - 40px);
+                bottom: 115%;
+                text-align: center;
+                box-sizing: border-box;
+                content: attr(data-tooltip);
+                color: #fff;
+                background-color: rgb(0, 0, 0);
+                padding: 5px;
+                border-radius: 5px;
+                font-family: Poppins;
+                font-size: 15px;
+                font-weight: bold;
+                visibility: hidden;
+                opacity: 0;
+                transform: translateY(10px);
+                transition: opacity 0.3s, transform 0.2s;
+            }
+            &:hover::after{
+                opacity: 1;
+                visibility: visible;
+                transform: translateY(0);
+            }
+        }
+    
+        [data-tooltip_l]{
+            position: relative;
+            cursor: default;
+            &::after{
+                position: absolute;
+                width: 160px;
+                left: calc(50% - 70px);
+                bottom: 115%;
+                text-align: center;
+                box-sizing: border-box;
+                content: attr(data-tooltip_l);
+                color: #fff;
+                background-color: rgb(0, 0, 0);
+                padding: 5px;
+                border-radius: 5px;
+                font-family: Poppins;
+                font-size: 15px;
+                font-weight: bold;
+                visibility: hidden;
+                opacity: 0;
+                transform: translateY(10px);
+                transition: opacity 0.3s, transform 0.2s;
+            }
+            &:hover::after{
+                opacity: 1;
+                visibility: visible;
+                transform: translateY(0);
+            }
+        }
 
 .portfolio{
     display: flex;

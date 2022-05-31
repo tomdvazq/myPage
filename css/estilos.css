@@ -422,7 +422,11 @@ main {
       .hard-skills .hardskills-title h2 {
         font-size: 70px; } }
   .hard-skills .hardskills-title h4 {
-    text-align: end; }
+    position: relative;
+    bottom: 20px;
+    text-align: end;
+    border: solid 1px black;
+    padding: 0px 5px; }
   .hard-skills .hardskills-logos {
     display: inline-flex;
     font-size: 120px;
@@ -575,15 +579,73 @@ main {
       flex-direction: row;
       justify-content: center;
       align-items: center;
-      font-size: 65px; }
+      font-size: 65px;
+      margin-top: 20px; }
       .hard-skills .softskills .softskills-logos .git:hover {
         transition: .5s;
         color: #EF5033; }
       .hard-skills .softskills .softskills-logos .github {
         margin: 0px 20px; }
+        .hard-skills .softskills .softskills-logos .github:hover {
+          transition: .5s;
+          color: #575757; }
       .hard-skills .softskills .softskills-logos .visual:hover {
         transition: .5s;
         color: #3EACF2; }
+
+[data-tooltip] {
+  position: relative;
+  cursor: default; }
+  [data-tooltip]::after {
+    position: absolute;
+    width: 80px;
+    left: calc(50% - 40px);
+    bottom: 115%;
+    text-align: center;
+    box-sizing: border-box;
+    content: attr(data-tooltip);
+    color: #fff;
+    background-color: black;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: bold;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s, transform 0.2s; }
+  [data-tooltip]:hover::after {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0); }
+
+[data-tooltip_l] {
+  position: relative;
+  cursor: default; }
+  [data-tooltip_l]::after {
+    position: absolute;
+    width: 160px;
+    left: calc(50% - 70px);
+    bottom: 115%;
+    text-align: center;
+    box-sizing: border-box;
+    content: attr(data-tooltip_l);
+    color: #fff;
+    background-color: black;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: bold;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s, transform 0.2s; }
+  [data-tooltip_l]:hover::after {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0); }
 
 .portfolio {
   display: flex;
