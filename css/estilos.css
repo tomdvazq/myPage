@@ -562,47 +562,20 @@ main {
       transition: all .5 ease;
       display: block; }
 
-.art {
+.portfolio {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center; }
-  .art h2 {
-    font-size: 120px;
-    margin: 20px;
-    transform: rotate(90deg); }
-  .art .geometry-a {
-    margin: 20px;
-    height: 400px;
-    width: 400px;
-    border: solid 1px black;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    .art .geometry-a .geometry-b {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      align-content: stretch;
-      align-items: flex-end;
-      flex-wrap: wrap;
-      height: 280px;
-      width: 280px;
-      border: solid 1px black;
-      transform: rotate(45deg); }
-      .art .geometry-a .geometry-b .geometry-20 {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: flex-start;
-        flex-wrap: wrap;
-        align-self: center;
-        margin: 0px 2.2px;
-        height: 60px;
-        width: 65px;
-        border: solid 1px black; }
-        .art .geometry-a .geometry-b .geometry-20:hover {
-          background-color: gray; }
+  .portfolio .portfolio-title {
+    display: flex; }
+    .portfolio .portfolio-title h2 {
+      font-size: 120px;
+      margin-left: 20px; }
+    .portfolio .portfolio-title span {
+      font-weight: bold;
+      font-size: 120px;
+      transform: rotate(90deg); }
 
 footer {
   grid-area: footer;

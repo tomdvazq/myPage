@@ -50,18 +50,3 @@ li.forEach((cadaLi, i)=>{
         block[i].classList.add('active')
     })
 })
-
-//Soundbox//
-
-let context = new AudioContext();
-
-function sound(freq){
-    let o = context.createOscillator();
-    g = context.createGain();
-    o.connect(g);
-    o.type = "sawtooth";
-    o.frequency.value = freq;
-    g.connect(context.destination);
-    o.start(0);
-    g.gain.exponentialRampToValueAtTime(0.00001,context.currentTime +1.5);
-}
