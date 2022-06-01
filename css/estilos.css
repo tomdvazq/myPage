@@ -444,20 +444,21 @@ main {
     .hard-skills .hardskills-logos .html h4 {
       font-size: 25px;
       text-align: center; }
-    .hard-skills .hardskills-logos .css .bxl-css3 {
-      margin: 0px 150px;
-      border: solid 2px black;
-      border-radius: 50%;
-      padding: 25px;
-      cursor: pointer; }
-      .hard-skills .hardskills-logos .css .bxl-css3:hover {
-        transition: 1s;
-        color: #009BDE;
-        border-color: #009BDE;
-        box-shadow: 0 0 5px #009BDE; }
-    .hard-skills .hardskills-logos .css h4 {
-      font-size: 25px;
-      text-align: center; }
+    .hard-skills .hardskills-logos .css {
+      margin: 0px 50px; }
+      .hard-skills .hardskills-logos .css .bxl-css3 {
+        border: solid 2px black;
+        border-radius: 50%;
+        padding: 25px;
+        cursor: pointer; }
+        .hard-skills .hardskills-logos .css .bxl-css3:hover {
+          transition: 1s;
+          color: #009BDE;
+          border-color: #009BDE;
+          box-shadow: 0 0 5px #009BDE; }
+      .hard-skills .hardskills-logos .css h4 {
+        font-size: 25px;
+        text-align: center; }
     .hard-skills .hardskills-logos .js .bxl-javascript {
       border: solid 2px black;
       border-radius: 50%;
@@ -471,6 +472,21 @@ main {
     .hard-skills .hardskills-logos .js h4 {
       font-size: 25px;
       text-align: center; }
+    .hard-skills .hardskills-logos .php {
+      margin-left: 50px; }
+      .hard-skills .hardskills-logos .php .bxl-php {
+        border: solid 2px black;
+        border-radius: 50%;
+        padding: 25px;
+        cursor: pointer; }
+        .hard-skills .hardskills-logos .php .bxl-php:hover {
+          transition: 1s;
+          color: #5D619A;
+          border-color: #5D619A;
+          box-shadow: 0 0 5px #5D619A; }
+      .hard-skills .hardskills-logos .php h4 {
+        font-size: 25px;
+        text-align: center; }
   .hard-skills .hardskills-readmore {
     display: flex;
     flex-direction: column;
@@ -587,11 +603,20 @@ main {
       .hard-skills .softskills .softskills-logos .github {
         margin: 0px 20px; }
         .hard-skills .softskills .softskills-logos .github:hover {
-          transition: .5s;
-          color: #575757; }
+          transition: .5s; }
       .hard-skills .softskills .softskills-logos .visual:hover {
         transition: .5s;
         color: #3EACF2; }
+      .hard-skills .softskills .softskills-logos .adobe {
+        margin-left: 20px; }
+        .hard-skills .softskills .softskills-logos .adobe:hover {
+          transition: .5s;
+          color: #FA0F02; }
+      .hard-skills .softskills .softskills-logos .wordpress {
+        margin-left: 20px; }
+        .hard-skills .softskills .softskills-logos .wordpress:hover {
+          transition: .5s;
+          color: #21759B; }
 
 [data-tooltip] {
   position: relative;

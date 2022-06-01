@@ -287,8 +287,8 @@ main{
                     }
                 }
                 .css{
+                    margin: 0px 50px;
                     .bxl-css3{
-                        margin: 0px 150px;
                         border: solid 2px black;
                         border-radius: 50%;
                         padding: 25px;
@@ -316,6 +316,25 @@ main{
                                 color: #f7df1e;
                                 border-color: #f7df1e;
                                 box-shadow: 0 0 5px #f7df1e;
+                            }
+                    }
+                    h4{
+                        font-size: 25px;
+                        text-align: center;
+                    }
+                }
+                .php{
+                    margin-left: 50px;
+                    .bxl-php{
+                        border: solid 2px black;
+                        border-radius: 50%;
+                        padding: 25px;
+                        cursor: pointer;
+                            &:hover{
+                                transition: 1s;
+                                color: #5D619A;
+                                border-color: #5D619A;
+                                box-shadow: 0 0 5px #5D619A;
                             }
                     }
                     h4{
@@ -443,7 +462,6 @@ main{
                             margin: 0px 20px;
                             &:hover{
                                 transition: .5s;
-                                color: rgb(87, 87, 87);
                             }
                         }
                         .visual{
@@ -451,6 +469,20 @@ main{
                                 transition: .5s;
                                 color: #3EACF2;
                             }
+                        }
+                        .adobe{
+                            margin-left: 20px;
+                            &:hover{
+                                transition: .5s;
+                                color: #FA0F02;
+                            }
+                        }
+                        .wordpress{
+                            margin-left: 20px;
+                                &:hover{
+                                    transition: .5s;
+                                    color: #21759B;
+                                }
                         }
                 }
         }
