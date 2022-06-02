@@ -732,11 +732,11 @@ main {
 
             .front,
             .back {
+                @include flex(column, center, center);
                 position: absolute;
                 height: 100%;
                 width: 100%;
                 background: url(../../media/difx.png);
-                line-height: 300px;
                 color: #ffffff;
                 text-align: center;
                 font-size: 60px;
@@ -748,6 +748,7 @@ main {
                 h2 {
                     font-family: Bleach;
                     font-weight: 100;
+                    color: white;
                 }
             }
 
@@ -768,11 +769,11 @@ main {
 
             .front,
             .back {
+                @include flex(column, center, center);
                 position: absolute;
                 height: 100%;
                 width: 100%;
-                background: url(../../media/difx.png);
-                line-height: 300px;
+                background: url(../../media/mycalculator.png);
                 color: #ffffff;
                 text-align: center;
                 font-size: 60px;
@@ -782,8 +783,10 @@ main {
 
             .front {
                 h2 {
-                    font-family: Bleach;
-                    font-weight: 100;
+                    font-family: Inconsolata;
+                    font-weight: bold;
+                    font-size: 30px;
+                    color: white;
                 }
             }
 
@@ -791,6 +794,12 @@ main {
                 background: #000;
                 color: white;
                 transform: rotateY(180deg);
+                    h3{
+                        font-size: 25px;
+                    }
+                    p{
+                        font-size: 20px;
+                    }
             }
         }
 

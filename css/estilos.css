@@ -115,6 +115,10 @@ body {
   font-family: Bleach;
   src: url(../fonts/Bleach.ttf); }
 
+@font-face {
+  font-family: Inconsolata;
+  src: url(../../fonts/Inconsolata-VariableFont_wdth\,wght.ttf); }
+
 /* Containers */
 .grid-container {
   display: grid;
@@ -723,11 +727,14 @@ main {
       transform-style: preserve-3d; }
       .portfolio-2 .portfolio-cards .project-difx .front,
       .portfolio-2 .portfolio-cards .project-difx .back {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         position: absolute;
         height: 100%;
         width: 100%;
         background: url(../../media/difx.png);
-        line-height: 300px;
         color: #ffffff;
         text-align: center;
         font-size: 60px;
@@ -735,7 +742,8 @@ main {
         backface-visibility: hidden; }
       .portfolio-2 .portfolio-cards .project-difx .front h2 {
         font-family: Bleach;
-        font-weight: 100; }
+        font-weight: 100;
+        color: white; }
       .portfolio-2 .portfolio-cards .project-difx .back {
         background: #000;
         color: white;
@@ -749,23 +757,32 @@ main {
       transform-style: preserve-3d; }
       .portfolio-2 .portfolio-cards .project-myc .front,
       .portfolio-2 .portfolio-cards .project-myc .back {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         position: absolute;
         height: 100%;
         width: 100%;
-        background: url(../../media/difx.png);
-        line-height: 300px;
+        background: url(../../media/mycalculator.png);
         color: #ffffff;
         text-align: center;
         font-size: 60px;
         border-radius: 5px;
         backface-visibility: hidden; }
       .portfolio-2 .portfolio-cards .project-myc .front h2 {
-        font-family: Bleach;
-        font-weight: 100; }
+        font-family: Inconsolata;
+        font-weight: bold;
+        font-size: 30px;
+        color: white; }
       .portfolio-2 .portfolio-cards .project-myc .back {
         background: #000;
         color: white;
         transform: rotateY(180deg); }
+        .portfolio-2 .portfolio-cards .project-myc .back h3 {
+          font-size: 25px; }
+        .portfolio-2 .portfolio-cards .project-myc .back p {
+          font-size: 20px; }
     .portfolio-2 .portfolio-cards:hover .project-difx {
       transform: rotateY(180deg);
       transition: transform 0.5s; }
