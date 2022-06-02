@@ -748,6 +748,10 @@ main {
         background: #000;
         color: white;
         transform: rotateY(180deg); }
+        .portfolio-2 .portfolio-cards .project-difx .back h3 {
+          font-size: 25px; }
+        .portfolio-2 .portfolio-cards .project-difx .back p {
+          font-size: 20px; }
     .portfolio-2 .portfolio-cards .project-myc {
       position: absolute;
       width: 100%;
