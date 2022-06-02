@@ -617,6 +617,11 @@ main {
         .hard-skills .softskills .softskills-logos .wordpress:hover {
           transition: .5s;
           color: #21759B; }
+      .hard-skills .softskills .softskills-logos .design {
+        margin-left: 20px; }
+        .hard-skills .softskills .softskills-logos .design:hover {
+          transition: .5s;
+          color: #6d5012; }
 
 [data-tooltip] {
   position: relative;
@@ -692,6 +697,81 @@ main {
     font-size: 20px;
     margin-right: 20px;
     font-weight: bold; }
+
+.portfolio-2 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr; }
+  .portfolio-2 .difx {
+    grid-column: 2;
+    grid-row: 1; }
+  .portfolio-2 .myc {
+    grid-column: 4;
+    grid-row: 1; }
+  .portfolio-2 .portfolio-cards {
+    width: 300px;
+    height: 300px;
+    margin: 75px auto;
+    perspective: 500px;
+    cursor: pointer; }
+    .portfolio-2 .portfolio-cards .project-difx {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      transition: transform 1s;
+      transform-style: preserve-3d; }
+      .portfolio-2 .portfolio-cards .project-difx .front,
+      .portfolio-2 .portfolio-cards .project-difx .back {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: url(../../media/difx.png);
+        line-height: 300px;
+        color: #ffffff;
+        text-align: center;
+        font-size: 60px;
+        border-radius: 5px;
+        backface-visibility: hidden; }
+      .portfolio-2 .portfolio-cards .project-difx .front h2 {
+        font-family: Bleach;
+        font-weight: 100; }
+      .portfolio-2 .portfolio-cards .project-difx .back {
+        background: #000;
+        color: white;
+        transform: rotateY(180deg); }
+    .portfolio-2 .portfolio-cards .project-myc {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      transition: transform 1s;
+      transform-style: preserve-3d; }
+      .portfolio-2 .portfolio-cards .project-myc .front,
+      .portfolio-2 .portfolio-cards .project-myc .back {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: url(../../media/difx.png);
+        line-height: 300px;
+        color: #ffffff;
+        text-align: center;
+        font-size: 60px;
+        border-radius: 5px;
+        backface-visibility: hidden; }
+      .portfolio-2 .portfolio-cards .project-myc .front h2 {
+        font-family: Bleach;
+        font-weight: 100; }
+      .portfolio-2 .portfolio-cards .project-myc .back {
+        background: #000;
+        color: white;
+        transform: rotateY(180deg); }
+    .portfolio-2 .portfolio-cards:hover .project-difx {
+      transform: rotateY(180deg);
+      transition: transform 0.5s; }
+    .portfolio-2 .portfolio-cards:hover .project-myc {
+      transform: rotateY(180deg);
+      transition: transform 0.5s; }
 
 footer {
   grid-area: footer;

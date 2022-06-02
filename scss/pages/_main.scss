@@ -1,121 +1,150 @@
-main{
+main {
     grid-area: main;
 }
 
 //Home//
-.home{
+.home {
     background-size: cover;
     height: 100vh;
     border-bottom: solid 1px black;
     @include flex(column, center, center);
-            img{
-                @include glassmorphism(shadow);
-                border-radius: 50%;
-                @include mQueriePages(l){
-                    width: 300px;
-                    height: 300px;
-                }
-                @include mQueriePages(s){
-                    width: 250px;
-                    height: 250px;
-                }
-            }
-            h1{
-                font-size: 135px;
-                @include mQueriePages(l){
-                    font-size: 90px;
-                }
-                @include mQueriePages(s){
-                    font-size: 50px;
-                }
-                span{
-                    text-align: center;
-                    font-family: PoppinsBold;
-                }
-            }
-            .continue{
-            @include flex(column, center, center);
-                p{
-                    font-size: 40px;
-                    @include mQueriePages(l){
-                        font-size: 30px;
-                    @include mQueriePages(s){
-                        font-size: 20px;
-                    }
-                    }
-                    i{
-                        text-decoration: line-through;
-                    }
-                }
-                .bx-chevron-down{
-                    font-size: 40px;
-                }
+
+    img {
+        @include glassmorphism(shadow);
+        border-radius: 50%;
+
+        @include mQueriePages(l) {
+            width: 300px;
+            height: 300px;
         }
+
+        @include mQueriePages(s) {
+            width: 250px;
+            height: 250px;
+        }
+    }
+
+    h1 {
+        font-size: 135px;
+
+        @include mQueriePages(l) {
+            font-size: 90px;
+        }
+
+        @include mQueriePages(s) {
+            font-size: 50px;
+        }
+
+        span {
+            text-align: center;
+            font-family: PoppinsBold;
+        }
+    }
+
+    .continue {
+        @include flex(column, center, center);
+
+        p {
+            font-size: 40px;
+
+            @include mQueriePages(l) {
+                font-size: 30px;
+
+                @include mQueriePages(s) {
+                    font-size: 20px;
+                }
+            }
+
+            i {
+                text-decoration: line-through;
+            }
+        }
+
+        .bx-chevron-down {
+            font-size: 40px;
+        }
+    }
 }
 
-    //About Me//
+//About Me//
 
-.about-me{
+.about-me {
     background-size: cover;
     border-bottom: solid 1px black;
     @include flex(row, space-between, center);
     flex-wrap: wrap;
-    @include mQueriePages(l){
+
+    @include mQueriePages(l) {
         flex-direction: column;
         justify-content: center;
     }
-        .about-me_title{
-            @include flex(row, flex-start, center);
-            margin: 0px 10px;
-            @include mQueriePages(l){
-                margin-top: 20px;
-            }
-            h2{
-                font-size: 120px;
-                @include mQueriePages(xl){
-                    font-size: 90px;
-                }
-                @include mQueriePages (s){
-                    font-size: 70px;
-                }
-            }
-            .h2-about{
-            }
-            .h2-rotate{
-                font-size: 100px;
-                transform: rotate(90deg);
-                @include mQueriePages(xl){
-                    font-size: 75px;
-                }
-                @include mQueriePages (s){
-                    font-size: 50px;
-                }
-            }
-        }
-        .about-me_im{
-            text-align: center;
-            @include mQueriePages(l){
-                margin: 10px 0px;
-            }
-                p{
-                    font-size: 20px;
-                    color: black;
-                    @include mQueriePages(xl){
-                        font-size: 15px;
-                    }
-                    @include mQueriePages(l){
-                        font-size: 20px;
-                    }
-                    @include mQueriePages (s){
-                        font-size: 15px;
-                    }
-                }
-        }
-}
-    //About Me//
-        //Data Accordeon//
 
-.about-me_data{
+    .about-me_title {
+        @include flex(row, flex-start, center);
+        margin: 0px 10px;
+
+        @include mQueriePages(l) {
+            margin-top: 20px;
+        }
+
+        h2 {
+            font-size: 120px;
+
+            @include mQueriePages(xl) {
+                font-size: 90px;
+            }
+
+            @include mQueriePages (s) {
+                font-size: 70px;
+            }
+        }
+
+        .h2-about {}
+
+        .h2-rotate {
+            font-size: 100px;
+            transform: rotate(90deg);
+
+            @include mQueriePages(xl) {
+                font-size: 75px;
+            }
+
+            @include mQueriePages (s) {
+                font-size: 50px;
+            }
+        }
+    }
+
+    .about-me_im {
+        text-align: center;
+
+        @include mQueriePages(l) {
+            margin: 10px 0px;
+        }
+
+        p {
+            font-size: 20px;
+            color: black;
+
+            @include mQueriePages(xl) {
+                font-size: 15px;
+            }
+
+            @include mQueriePages(l) {
+                font-size: 20px;
+            }
+
+            @include mQueriePages (s) {
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+//About Me//
+//Data Accordeon//
+
+.about-me_data {
     width: 600px;
     height: auto;
     display: flex;
@@ -123,458 +152,656 @@ main{
     align-items: center;
     flex-direction: column;
     border-left: solid 1px black;
-    @include mQueriePages(xl){
+
+    @include mQueriePages(xl) {
         width: 500px;
     }
-    @include mQueriePages(desktopL){
+
+    @include mQueriePages(desktopL) {
         width: 400px;
     }
-    @include mQueriePages(l){
+
+    @include mQueriePages(l) {
         border-left: none;
         width: 100vw;
     }
-        .aboutMe-data_container{
-            height: auto;
-            width: 100%;
-            padding: 10px;
-            position: relative;
-            transition: 0.5s;
-            cursor: pointer;
-            background-color: transparent;
-            @include mQueriePages(xl){
-                padding: 0px;
+
+    .aboutMe-data_container {
+        height: auto;
+        width: 100%;
+        padding: 10px;
+        position: relative;
+        transition: 0.5s;
+        cursor: pointer;
+        background-color: transparent;
+
+        @include mQueriePages(xl) {
+            padding: 0px;
+        }
+    }
+
+    .aboutMe-data_collapse {
+        height: 100px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 40px;
+        box-sizing: border-box;
+        background-color: transparent;
+        overflow: hidden;
+
+        .aboutMe-sentence {
+            font-size: 20px;
+            font-weight: bold;
+
+            &:active {
+                color: rgb(35, 113, 231);
+            }
+
+            @include mQueriePages(xl) {
+                font-size: 16px;
+            }
+
+            @include mQueriePages (mobileSecond) {
+                font-size: 13px;
+            }
+
+            span {
+                @include mQueriePages (mobileSecond) {
+                    display: none;
+                }
             }
         }
-        .aboutMe-data_collapse{
-            height: 100px;
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 40px;
+    }
+
+    .aboutMe-answer {
+        overflow: hidden;
+        transition: .5s;
+        height: 0;
+
+        p {
+            padding: 0px 40px;
             box-sizing: border-box;
-            background-color: transparent;
-            overflow: hidden;
-                .aboutMe-sentence{
-                    font-size: 20px;
-                    font-weight: bold;
-                        &:active{
-                            color: rgb(35, 113, 231);
-                        }
-                    @include mQueriePages(xl){
-                        font-size: 16px;
-                    }
-                    @include mQueriePages (mobileSecond){
-                        font-size: 13px;
-                    }
-                    span{
-                        @include mQueriePages (mobileSecond){
-                            display: none;
-                        }
-                    }
-                }
-        }
-        .aboutMe-answer{
-            overflow: hidden;
-            transition: .5s;
-            height: 0;
-                p{
-                    padding: 0px 40px;
-                    box-sizing: border-box;
-                    font-size: 15px;
-                    color: black;
-                        a{
-                            color: black;
-                        }
-                }
-        }
-        .open{
-            height: 170px;
-            transform: translateY(0);
-            @include mQueriePages(xl){
-                height: 230px;
-            }
-            @include mQueriePages(desktopL){
-                height: 270px;
-            }
-            @include mQueriePages(l){
-                height: 120px;
-            }
-            @include mQueriePages(m){
-                height: 160px;
-            }
-            @include mQueriePages (mobileFirst){
-                height: 220px;
-            }
-            @include mQueriePages (mobileSecond){
-                height: 270px;
+            font-size: 15px;
+            color: black;
+
+            a {
+                color: black;
             }
         }
-        .arrow-container{
-            width: 40px;
-            height: 30px;
-            position: relative;
+    }
+
+    .open {
+        height: 170px;
+        transform: translateY(0);
+
+        @include mQueriePages(xl) {
+            height: 230px;
         }
-        .up .line{
-            transform: translate(0%, -50%) rotate(-45deg);
+
+        @include mQueriePages(desktopL) {
+            height: 270px;
         }
-        .up .line:nth-of-type(2){
-            transform: translate(0%, -50%) rotate(45deg);
+
+        @include mQueriePages(l) {
+            height: 120px;
         }
-        
-        .line{
-            height: 1px;
-            width: 50%;
-            position: absolute;
-            background-color: #121212;
-            position: absolute;
-            top: 50%;
-            left: 8%;
-            transform: translate(0%, -50%) rotate(45deg);
+
+        @include mQueriePages(m) {
+            height: 160px;
         }
-        
-        .line:nth-of-type(2){
-            right: 8%;
-            left: auto;
-            transform: translate(0%, -50%) rotate(-45deg);
+
+        @include mQueriePages (mobileFirst) {
+            height: 220px;
         }
+
+        @include mQueriePages (mobileSecond) {
+            height: 270px;
+        }
+    }
+
+    .arrow-container {
+        width: 40px;
+        height: 30px;
+        position: relative;
+    }
+
+    .up .line {
+        transform: translate(0%, -50%) rotate(-45deg);
+    }
+
+    .up .line:nth-of-type(2) {
+        transform: translate(0%, -50%) rotate(45deg);
+    }
+
+    .line {
+        height: 1px;
+        width: 50%;
+        position: absolute;
+        background-color: #121212;
+        position: absolute;
+        top: 50%;
+        left: 8%;
+        transform: translate(0%, -50%) rotate(45deg);
+    }
+
+    .line:nth-of-type(2) {
+        right: 8%;
+        left: auto;
+        transform: translate(0%, -50%) rotate(-45deg);
+    }
 }
 
-    //Hardskills//
-.hard-skills{
+//Hardskills//
+.hard-skills {
     @include flex(column, center, center);
     flex-wrap: wrap;
     border-bottom: solid 1px black;
-        .hardskills-title{
-            h2{
-                font-size: 120px;
-                text-decoration: underline;
-                @include mQueriePages(xl){
-                    font-size: 90px;
-                }
-                @include mQueriePages (s){
-                    font-size: 70px;
-                }
-            }
-            h4{
-                position: relative;
-                bottom: 20px;
-                text-align: end;
-                border: solid 1px black;
-                padding: 0px 5px;
-            }
-        }
-        .hardskills-logos{
-            display: inline-flex;
+
+    .hardskills-title {
+        h2 {
             font-size: 120px;
-            margin: 15px 0px;
-                .html{
-                    .bxl-html5{
-                        border: solid 2px black;
-                        border-radius: 50%;
-                        padding: 25px;
-                        cursor: pointer;
-                            &:hover{
-                                transition: 1s;
-                                color: #E44D26;
-                                border-color: #E44D26;
-                                box-shadow: 0 0 5px #E44D26;
-                            }
-                    }
-                    h4{
-                        font-size: 25px;
-                        text-align: center;
-                    }
-                }
-                .css{
-                    margin: 0px 50px;
-                    .bxl-css3{
-                        border: solid 2px black;
-                        border-radius: 50%;
-                        padding: 25px;
-                        cursor: pointer;
-                            &:hover{
-                                transition: 1s;
-                                color: #009BDE;
-                                border-color: #009BDE;
-                                box-shadow: 0 0 5px #009BDE;
-                            }
-                    }
-                    h4{
-                        font-size: 25px;
-                        text-align: center;
-                    }
-                }
-                .js{
-                    .bxl-javascript{
-                        border: solid 2px black;
-                        border-radius: 50%;
-                        padding: 25px;
-                        cursor: pointer;
-                            &:hover{
-                                transition: 1s;
-                                color: #f7df1e;
-                                border-color: #f7df1e;
-                                box-shadow: 0 0 5px #f7df1e;
-                            }
-                    }
-                    h4{
-                        font-size: 25px;
-                        text-align: center;
-                    }
-                }
-                .php{
-                    margin-left: 50px;
-                    .bxl-php{
-                        border: solid 2px black;
-                        border-radius: 50%;
-                        padding: 25px;
-                        cursor: pointer;
-                            &:hover{
-                                transition: 1s;
-                                color: #5D619A;
-                                border-color: #5D619A;
-                                box-shadow: 0 0 5px #5D619A;
-                            }
-                    }
-                    h4{
-                        font-size: 25px;
-                        text-align: center;
-                    }
-                }
+            text-decoration: underline;
+
+            @include mQueriePages(xl) {
+                font-size: 90px;
+            }
+
+            @include mQueriePages (s) {
+                font-size: 70px;
+            }
         }
-        .hardskills-readmore{
+
+        h4 {
+            position: relative;
+            bottom: 20px;
+            text-align: end;
+            border: solid 1px black;
+            padding: 0px 5px;
+        }
+    }
+
+    .hardskills-logos {
+        display: inline-flex;
+        font-size: 120px;
+        margin: 15px 0px;
+
+        .html {
+            .bxl-html5 {
+                border: solid 2px black;
+                border-radius: 50%;
+                padding: 25px;
+                cursor: pointer;
+
+                &:hover {
+                    transition: 1s;
+                    color: #E44D26;
+                    border-color: #E44D26;
+                    box-shadow: 0 0 5px #E44D26;
+                }
+            }
+
+            h4 {
+                font-size: 25px;
+                text-align: center;
+            }
+        }
+
+        .css {
+            margin: 0px 50px;
+
+            .bxl-css3 {
+                border: solid 2px black;
+                border-radius: 50%;
+                padding: 25px;
+                cursor: pointer;
+
+                &:hover {
+                    transition: 1s;
+                    color: #009BDE;
+                    border-color: #009BDE;
+                    box-shadow: 0 0 5px #009BDE;
+                }
+            }
+
+            h4 {
+                font-size: 25px;
+                text-align: center;
+            }
+        }
+
+        .js {
+            .bxl-javascript {
+                border: solid 2px black;
+                border-radius: 50%;
+                padding: 25px;
+                cursor: pointer;
+
+                &:hover {
+                    transition: 1s;
+                    color: #f7df1e;
+                    border-color: #f7df1e;
+                    box-shadow: 0 0 5px #f7df1e;
+                }
+            }
+
+            h4 {
+                font-size: 25px;
+                text-align: center;
+            }
+        }
+
+        .php {
+            margin-left: 50px;
+
+            .bxl-php {
+                border: solid 2px black;
+                border-radius: 50%;
+                padding: 25px;
+                cursor: pointer;
+
+                &:hover {
+                    transition: 1s;
+                    color: #5D619A;
+                    border-color: #5D619A;
+                    box-shadow: 0 0 5px #5D619A;
+                }
+            }
+
+            h4 {
+                font-size: 25px;
+                text-align: center;
+            }
+        }
+    }
+
+    .hardskills-readmore {
         @include flex(column, center, center);
         margin: 10px 0px;
-            button{
-                border-radius: 0px;
-                box-shadow: 0px 3px 0px #000000;
-                font-family: Arial;
-                color: #000000;
-                font-size: 20px;
-                background: #ffffff;
-                padding: 10px 20px 10px 20px;
-                border: solid #000000 2px;
+
+        button {
+            border-radius: 0px;
+            box-shadow: 0px 3px 0px #000000;
+            font-family: Arial;
+            color: #000000;
+            font-size: 20px;
+            background: #ffffff;
+            padding: 10px 20px 10px 20px;
+            border: solid #000000 2px;
+            text-decoration: none;
+            cursor: pointer;
+
+            &:hover {
+                transition: .5s;
+                background: #8bd9d5;
                 text-decoration: none;
-                cursor: pointer;
-                    &:hover{
-                        transition: .5s;
-                        background: #8bd9d5;
-                        text-decoration: none;
-                        color: #fff;
-                    }
-                    &:hover:active{
-                        transform: translateY(3px);
-                        box-shadow: 0px 0px 0px #000000;
-                        color: black;
-                    }
+                color: #fff;
             }
-            .hide{
+
+            &:hover:active {
+                transform: translateY(3px);
+                box-shadow: 0px 0px 0px #000000;
+                color: black;
+            }
+        }
+
+        .hide {
             display: none;
             @include glassmorphism(shadow);
             margin: 10px 0px;
             width: 100%;
             padding: 1em;
-                ul{
-                    width: 100%;
-                    @include flex(row, flex-start, center);
-                    flex-wrap: nowrap;
-                }
-                li{
-                    @include glassmorphism(shadow);
-                    list-style-type: none;
-                    padding: 1em;
-                    margin: 0 2em 0 0;
-                    cursor: pointer;
-                    transition: all .5 ease;
-                        i{
-                            margin: auto;
-                            font-size: 50px;
-                        }
-                }
-                li.active{
-                    color: white;
-                    font-weight: bold;
-                }
-                li.bs.active{
-                    background-color: #5a23c8;;
-                }
-                li.tw.active{
-                    background-color: #19B3B8;
-                }
-                li.sass.active{
-                    background-color: #D56EA3;
-                }
-                li.css-pure.active{
-                    background-color: #009BDE;
-                }
-                .container{
-                    min-width: 100%;
-                    min-height: 30vh;
-                    position: relative;
-                }
-                .block{
-                    margin: 1em 0em;
-                    padding: 1em;
-                    position: absolute;
-                    top: 0;
-                    opacity: 0;
-                    transition: all .5 ease;
-                        h5{
-                            font-size: 20px;
-                            text-decoration: underline;
-                            margin-bottom: 10px;
-                            a{
-                                text-decoration: none;
-                                color: black;
-                            }
-                        }
-                        p{
-                            margin: 10px 0px;
-                        }
-                }
-                .block.active{
-                    opacity: 1;
-                }
+
+            ul {
+                width: 100%;
+                @include flex(row, flex-start, center);
+                flex-wrap: nowrap;
             }
-            .show{
+
+            li {
+                @include glassmorphism(shadow);
+                list-style-type: none;
+                padding: 1em;
+                margin: 0 2em 0 0;
+                cursor: pointer;
                 transition: all .5 ease;
-                display: block;
+
+                i {
+                    margin: auto;
+                    font-size: 50px;
+                }
+            }
+
+            li.active {
+                color: white;
+                font-weight: bold;
+            }
+
+            li.bs.active {
+                background-color: #5a23c8;
+                ;
+            }
+
+            li.tw.active {
+                background-color: #19B3B8;
+            }
+
+            li.sass.active {
+                background-color: #D56EA3;
+            }
+
+            li.css-pure.active {
+                background-color: #009BDE;
+            }
+
+            .container {
+                min-width: 100%;
+                min-height: 30vh;
+                position: relative;
+            }
+
+            .block {
+                margin: 1em 0em;
+                padding: 1em;
+                position: absolute;
+                top: 0;
+                opacity: 0;
+                transition: all .5 ease;
+
+                h5 {
+                    font-size: 20px;
+                    text-decoration: underline;
+                    margin-bottom: 10px;
+
+                    a {
+                        text-decoration: none;
+                        color: black;
+                    }
+                }
+
+                p {
+                    margin: 10px 0px;
+                }
+            }
+
+            .block.active {
+                opacity: 1;
             }
         }
-        .softskills{
-            @include flex(column, center, center);
-            margin-top: 20px;
-                h2{
-                    font-size: 40px;
-                }
-                .softskills-logos{
-                    @include flex(row, center, center);
-                    font-size: 65px;
-                    margin-top: 20px;
-                        .git{
-                            &:hover{
-                                transition: .5s;
-                                color: #EF5033;
-                            }
-                        }
-                        .github{
-                            margin: 0px 20px;
-                            &:hover{
-                                transition: .5s;
-                            }
-                        }
-                        .visual{
-                            &:hover{
-                                transition: .5s;
-                                color: #3EACF2;
-                            }
-                        }
-                        .adobe{
-                            margin-left: 20px;
-                            &:hover{
-                                transition: .5s;
-                                color: #FA0F02;
-                            }
-                        }
-                        .wordpress{
-                            margin-left: 20px;
-                                &:hover{
-                                    transition: .5s;
-                                    color: #21759B;
-                                }
-                        }
-                }
+
+        .show {
+            transition: all .5 ease;
+            display: block;
         }
+    }
+
+    .softskills {
+        @include flex(column, center, center);
+        margin-top: 20px;
+
+        h2 {
+            font-size: 40px;
+        }
+
+        .softskills-logos {
+            @include flex(row, center, center);
+            font-size: 65px;
+            margin-top: 20px;
+
+            .git {
+                &:hover {
+                    transition: .5s;
+                    color: #EF5033;
+                }
+            }
+
+            .github {
+                margin: 0px 20px;
+
+                &:hover {
+                    transition: .5s;
+                }
+            }
+
+            .visual {
+                &:hover {
+                    transition: .5s;
+                    color: #3EACF2;
+                }
+            }
+
+            .adobe {
+                margin-left: 20px;
+
+                &:hover {
+                    transition: .5s;
+                    color: #FA0F02;
+                }
+            }
+
+            .wordpress {
+                margin-left: 20px;
+
+                &:hover {
+                    transition: .5s;
+                    color: #21759B;
+                }
+            }
+
+            .design {
+                margin-left: 20px;
+
+                &:hover {
+                    transition: .5s;
+                    color: #6d5012;
+                }
+            }
+        }
+    }
 }
 
-    //Softskills// 
-        //Tooltips// 
+//Softskills// 
+//Tooltips// 
 
-        [data-tooltip]{
-            position: relative;
-            cursor: default;
-            &::after{
-                position: absolute;
-                width: 80px;
-                left: calc(50% - 40px);
-                bottom: 115%;
-                text-align: center;
-                box-sizing: border-box;
-                content: attr(data-tooltip);
-                color: #fff;
-                background-color: rgb(0, 0, 0);
-                padding: 5px;
-                border-radius: 5px;
-                font-family: Poppins;
-                font-size: 15px;
-                font-weight: bold;
-                visibility: hidden;
-                opacity: 0;
-                transform: translateY(10px);
-                transition: opacity 0.3s, transform 0.2s;
-            }
-            &:hover::after{
-                opacity: 1;
-                visibility: visible;
-                transform: translateY(0);
-            }
-        }
-    
-        [data-tooltip_l]{
-            position: relative;
-            cursor: default;
-            &::after{
-                position: absolute;
-                width: 160px;
-                left: calc(50% - 70px);
-                bottom: 115%;
-                text-align: center;
-                box-sizing: border-box;
-                content: attr(data-tooltip_l);
-                color: #fff;
-                background-color: rgb(0, 0, 0);
-                padding: 5px;
-                border-radius: 5px;
-                font-family: Poppins;
-                font-size: 15px;
-                font-weight: bold;
-                visibility: hidden;
-                opacity: 0;
-                transform: translateY(10px);
-                transition: opacity 0.3s, transform 0.2s;
-            }
-            &:hover::after{
-                opacity: 1;
-                visibility: visible;
-                transform: translateY(0);
-            }
-        }
+[data-tooltip] {
+    position: relative;
+    cursor: default;
 
-.portfolio{
+    &::after {
+        position: absolute;
+        width: 80px;
+        left: calc(50% - 40px);
+        bottom: 115%;
+        text-align: center;
+        box-sizing: border-box;
+        content: attr(data-tooltip);
+        color: #fff;
+        background-color: rgb(0, 0, 0);
+        padding: 5px;
+        border-radius: 5px;
+        font-family: Poppins;
+        font-size: 15px;
+        font-weight: bold;
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(10px);
+        transition: opacity 0.3s, transform 0.2s;
+    }
+
+    &:hover::after {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+}
+
+[data-tooltip_l] {
+    position: relative;
+    cursor: default;
+
+    &::after {
+        position: absolute;
+        width: 160px;
+        left: calc(50% - 70px);
+        bottom: 115%;
+        text-align: center;
+        box-sizing: border-box;
+        content: attr(data-tooltip_l);
+        color: #fff;
+        background-color: rgb(0, 0, 0);
+        padding: 5px;
+        border-radius: 5px;
+        font-family: Poppins;
+        font-size: 15px;
+        font-weight: bold;
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(10px);
+        transition: opacity 0.3s, transform 0.2s;
+    }
+
+    &:hover::after {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+}
+
+.portfolio {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-        .portfolio-title{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            h2{
-                font-size: 120px;
-                margin-left: 20px;
+
+    .portfolio-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+            font-size: 120px;
+            margin-left: 20px;
+        }
+
+        span {
+            font-weight: bold;
+            font-size: 120px;
+            transform: rotate(90deg);
+        }
+    }
+
+    .portfolio-sentence {
+        p {
+            font-size: 20px;
+            margin-right: 20px;
+            font-weight: bold;
+        }
+    }
+}
+
+.portfolio-2 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+
+    .difx{
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .myc{
+        grid-column: 4;
+        grid-row: 1;
+    }
+
+    .portfolio-cards {
+        width: 300px;
+        height: 300px;
+        margin: 75px auto;
+        perspective: 500px;
+        cursor: pointer;
+
+        .project-difx {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            transition: transform 1s;
+            transform-style: preserve-3d;
+
+            .front,
+            .back {
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                background: url(../../media/difx.png);
+                line-height: 300px;
+                color: #ffffff;
+                text-align: center;
+                font-size: 60px;
+                border-radius: 5px;
+                backface-visibility: hidden;
             }
-            span{
-                font-weight: bold;
-                font-size: 120px;
-                transform: rotate(90deg);
+
+            .front {
+                h2 {
+                    font-family: Bleach;
+                    font-weight: 100;
+                }
+            }
+
+            .back {
+                background: #000;
+                color: white;
+                transform: rotateY(180deg);
             }
         }
-        .portfolio-sentence{
-            p{
-                font-size: 20px;
-                margin-right: 20px;
-                font-weight: bold;
+
+        .project-myc{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            transition: transform 1s;
+            transform-style: preserve-3d;
+
+            .front,
+            .back {
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                background: url(../../media/difx.png);
+                line-height: 300px;
+                color: #ffffff;
+                text-align: center;
+                font-size: 60px;
+                border-radius: 5px;
+                backface-visibility: hidden;
+            }
+
+            .front {
+                h2 {
+                    font-family: Bleach;
+                    font-weight: 100;
+                }
+            }
+
+            .back {
+                background: #000;
+                color: white;
+                transform: rotateY(180deg);
             }
         }
+
+        &:hover .project-difx{
+            transform: rotateY(180deg);
+            transition: transform 0.5s;
+        }
+
+        &:hover .project-myc{
+            transform: rotateY(180deg);
+            transition: transform 0.5s;
+        }
+    }
 }
