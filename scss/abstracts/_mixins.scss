@@ -1,33 +1,39 @@
 // Displays //
 
-@mixin grid($gtc, $gtr){
+@mixin grid($gtc, $gtr) {
     display: grid;
     grid-template-columns: $gtc;
     grid-template-rows: $gtr;
-};
+}
 
-@mixin flex($fd, $jc, $ai){
+;
+
+@mixin flex($fd, $jc, $ai) {
     display: flex;
     flex-direction: $fd;
     justify-content: $jc;
     align-items: $ai;
-};
+}
+
+;
 
 // Hamburger Menu Media Querie// 
 
-@mixin mQuerie($size){
-    @if $size == bars{
-        @media (max-width: 768px){
+@mixin mQuerie($size) {
+    @if $size==bars {
+        @media (max-width: 768px) {
             display: block;
             cursor: pointer;
         }
-    } @else if $size == sections{
-        @media (max-width: 768px){
+    }
+
+    @else if $size==sections {
+        @media (max-width: 768px) {
             position: fixed;
             top: 80px;
             bottom: 0;
-            background-color: rgba(0, 0, 0, 0.9);  
-            font-family: PoppinsBold;                     
+            background-color: rgba(0, 0, 0, 0.9);
+            font-family: PoppinsBold;
             width: 100%;
             left: 0;
             @include flex(column, space-evenly, center);
@@ -40,53 +46,113 @@
 
 // Backgrounds // 
 
-@mixin fondoInicio(){
+@mixin fondoInicio() {
     height: 100%;
     background-color: #8BC6EC;
-    background-image: linear-gradient(135deg, #8BC6EC 0%, #c295e2 100%);    
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #c295e2 100%);
 }
 
 // Containers Main //
 
-@mixin glassmorphism($g){
-    @if $g == shadow{
-    background: transparent;
-    box-shadow: 0 5px 15px 0 rgba(39, 142, 166, 0.3); 
-    backdrop-filter: blur( 7px );
-    -webkit-backdrop-filter: blur(7px);
-    border-radius: 10px;
-    padding: 10px 20px;
-} @else if $g == noshadow{
-    background: transparent;
-    box-shadow: 5px 5px 5px 0 rgba(39, 142, 166, 0.3); 
-    backdrop-filter: blur( 7px );
-    -webkit-backdrop-filter: blur(7px);
-    border-radius: 10px;
-    padding: 10px 20px;
-} @else if $g = readmore{
-    background: transparent;
-    box-shadow: 1px 1px 3px 0 rgba(103, 103, 103, 0.3); 
-    backdrop-filter: blur( 7px );
-    -webkit-backdrop-filter: blur(7px);
-}
+@mixin glassmorphism($g) {
+    @if $g==shadow {
+        background: transparent;
+        box-shadow: 0 5px 15px 0 rgba(39, 142, 166, 0.3);
+        backdrop-filter: blur(7px);
+        -webkit-backdrop-filter: blur(7px);
+        border-radius: 10px;
+        padding: 10px 20px;
+    }
+
+    @else if $g==noshadow {
+        background: transparent;
+        box-shadow: 5px 5px 5px 0 rgba(39, 142, 166, 0.3);
+        backdrop-filter: blur(7px);
+        -webkit-backdrop-filter: blur(7px);
+        border-radius: 10px;
+        padding: 10px 20px;
+    }
+
+    @else if $g=readmore {
+        background: transparent;
+        box-shadow: 1px 1px 3px 0 rgba(103, 103, 103, 0.3);
+        backdrop-filter: blur(7px);
+        -webkit-backdrop-filter: blur(7px);
+    }
 }
 
 // MQ //
 
-@mixin mQueriePages($size){
-    @if $size == l{
-        @media (max-width: 1020px) { @content };
-    } @else if $size == m{
-        @media (max-width: 768px) { @content };
-    } @else if $size == s{
-        @media (max-width: 600px) { @content };
-    } @else if $size == xl{
-        @media (max-width: 1480px) { @content };
-    } @else if $size == desktopL{
-        @media (max-width: 1200px) { @content };
-    } @else if $size == mobileFirst{
-        @media (max-width: 552px) { @content };
-    } @else if $size == mobileSecond{
-        @media (max-width: 451px) { @content };
+@mixin mQueriePages($size) {
+    @if $size==l {
+        @media (max-width: 1020px) {
+            @content
+        }
+
+        ;
+    }
+
+    @else if $size==m {
+        @media (max-width: 768px) {
+            @content
+        }
+
+        ;
+    }
+
+    @else if $size==s {
+        @media (max-width: 600px) {
+            @content
+        }
+
+        ;
+    }
+
+    @else if $size==xl {
+        @media (max-width: 1480px) {
+            @content
+        }
+
+        ;
+    }
+
+    @else if $size==desktopL {
+        @media (max-width: 1200px) {
+            @content
+        }
+
+        ;
+    }
+
+    @else if $size==mobileFirst {
+        @media (max-width: 552px) {
+            @content
+        }
+
+        ;
+    }
+
+    @else if $size==mobileSecond {
+        @media (max-width: 451px) {
+            @content
+        }
+
+        ;
+    }
+
+    @else if $size==tablet {
+        @media (max-width: 992px) {
+            @content
+        }
+
+        ;
+    }
+
+    @else if $size==mobile {
+        @media (max-width: 390px) {
+            @content
+        }
+
+        ;
     }
 }
