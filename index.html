@@ -301,6 +301,46 @@
                         </div>
                     </section>
                 </section>
+
+                <section class="contact" id="contact">
+                    <h2>Contact</h2>
+                    <div class="img">
+                        <img src="media/contact.png" alt="contact">
+                    </div>
+                    <form action="">
+                        <div class="form-row">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name" class="space-form">
+                        </div>
+                        <div class="form-row">
+                            <label for="company" class="company">Company <b data-tooltip_form="If you work as a recruiter in a company please add information in this item. In case you are looking for a freelance service it is not necessary.">Optional</b></label>
+                            <input type="text" name="company" id="company" class="space-form">
+                        </div>
+                        <div class="form-row">
+                            <label for="country">Country</label>
+                            <input type="text" name="country" id="country" class="space-form">
+                        </div>
+                        <div class="form-row">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" class="space-form">
+                        </div>
+                        <fieldset class="legacy-form-row">
+                            <legend>Reason for contact</legend>
+                            <input type="radio" name="work" id="work">
+                            <label for="work" class="radio-label">Formal Work</label>
+                            <input type="radio" name="work" id="freelance">
+                            <label for="freelance" class="radio-label_f">Freelance Work</label>
+                        </fieldset>
+                        <div class="form-row message-section">
+                            <label for="message">Send me a message <b data-tooltip_form="If you are looking for a freelance contract, please explain briefly what your project consists of. If you are a recruiter, please add information about the company.">Learn more</b></label> 
+                            <textarea name="message" id="message" class="space-form_m"></textarea>
+                            <div class="instructions">Write your message with a maximum of 500 words.</div>
+                        </div>
+                        <div class="form-row button">
+                            <button type="submit"><span>Submit</span></button>
+                        </div>
+                    </form>
+                </section>
             </div>
         </main>
 

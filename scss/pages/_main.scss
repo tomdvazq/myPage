@@ -799,6 +799,40 @@ main {
     }
 }
 
+[data-tooltip_form] {
+    position: relative;
+    cursor: default;
+
+    &::after {
+        position: absolute;
+        width: 400px;
+        left: calc(50% - 200px);
+        bottom: 135%;
+        text-align: center;
+        box-sizing: border-box;
+        content: attr(data-tooltip_form);
+        color: #fff;
+        background-color: rgb(0, 0, 0);
+        padding: 5px;
+        border-radius: 5px;
+        font-family: Poppins;
+        font-size: 12px;
+        font-weight: bold;
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(10px);
+        transition: opacity 0.3s, transform 0.2s;
+    }
+
+    &:hover::after {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+}
+
+//Portfolio// 
+
 .portfolio {
     display: flex;
     flex-direction: row;
@@ -864,6 +898,7 @@ main {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 1fr;
+    border-bottom: solid 1px black;
 
     @include mQueriePages(m) {
         display: flex;
@@ -1083,6 +1118,189 @@ main {
         &:hover .project-myc {
             transform: rotateY(180deg);
             transition: transform 0.5s;
+        }
+    }
+}
+
+//Contact// 
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    h2 {
+        font-size: 120px;
+        margin: 25px;
+
+        @include mQueriePages(xl) {
+            font-size: 90px;
+        }
+
+        @include mQueriePages(s) {
+            font-size: 70px;
+        }
+    }
+
+    .img{
+        img{
+            width: 300px;
+            height: 300px;
+        }
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0px 25px;
+        margin: 25px;
+        border: solid 1px black;
+        font-family: Poppins;
+
+        label {
+            font-weight: bold;
+
+            b {
+                border: solid 1px rgb(185, 185, 185);
+                ;
+                font-size: 10px;
+                padding: 0px 5px;
+                color: rgb(185, 185, 185);
+                cursor: pointer;
+            }
+        }
+
+        input {
+            margin-top: 5px;
+        }
+
+        legend {
+            padding: 0px 10px;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        .space-form {
+            height: 25px;
+            font-size: 15px;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        .space-form_m {
+            height: 120px;
+            font-size: 15px;
+            padding: 5px;
+            border-radius: 5px;
+            font-family: Poppins;
+        }
+
+        .form-row {
+            display: flex;
+            flex-direction: column;
+            margin: 20px 0px;
+
+            .company {
+                @include flex(row, flex-start, center);
+
+                b {
+                    margin-left: 5px;
+                }
+            }
+        }
+
+        .legacy-form-row {
+            padding: 0px 10px;
+
+            label {
+                font-weight: 100;
+            }
+
+            #freelance {
+                margin-left: 20px;
+            }
+        }
+
+        .message-section {
+            label {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+
+                b {
+                    margin-left: 5px;
+                }
+            }
+
+            textarea {
+                margin-top: 5px;
+            }
+        }
+
+        .button {
+            align-self: center;
+
+            button {
+                display: inline-block;
+                text-decoration: none;
+                border-radius: 5px;
+                padding: 2px;
+                position: relative;
+                overflow: hidden;
+                cursor: pointer;
+
+                @include mQueriePages(mobileSecond) {
+                    font-size: 15px;
+                }
+
+                &::before{
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 250%;
+                    height: 150%;
+                    background: linear-gradient(115deg,#4fcf70,#fad648,#a767e5,#12bcfe,#44ce7b);
+                    background-size: 50% 100%;
+                    border-radius: inherit;
+
+                }
+
+                &:hover{
+                    transition: .5s;
+                    box-shadow: 0px 3px 0px black;
+                }
+
+                &:hover:active{
+                    transform: translateY(3px);
+                    box-shadow: 0px 0px 0px black;
+                }
+
+                &:hover::before{
+                    animation: animate_border 0.75s linear infinite;
+                }
+                
+                span{
+                    display: block;
+                    font-family: Poppins;
+                    background-color: white;
+                    color: black;
+                    font-size: 20px;
+                    padding: 10px;
+                    border-radius: 5px;
+                    position: relative;
+                }
+
+                @keyframes animate_border{
+                    to {
+                        transform: translateX(-50%);
+                    }
+                }
+            }
         }
     }
 }
