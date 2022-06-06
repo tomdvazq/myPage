@@ -9,8 +9,9 @@
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel='stylesheet' href='https://unpkg.com/emoji.css/dist/emoji.min.css'>
     <link href="css/estilos.css" rel="stylesheet">
-    <title>Home | @tomdvazq</title>
+    <title>Success! | @tomdvazq</title>
 </head>
+
 <body>
     <div class="flex-container_success">
         <div class="congrats">
@@ -23,24 +24,24 @@
 
     <script>
         /* Redirect to index */
-        setTimeout(function() {
+        setTimeout(function () {
             window.location.replace("index.html");
-        },2000);
+        }, 2000);
 
         /* TypeWrite Effect */
-        
+
         let i = 0;
         let text = '...';
         let speed = 500;
 
-        function typeWrite(){
-            if(i < text.length){
+        function typeWrite() {
+            if (i < text.length) {
                 document.getElementById('redirect').innerHTML += text.charAt(i);
                 i++;
                 setTimeout(typeWrite, speed);
             }
         }
-        
+
         typeWrite();
     </script>
 </body>

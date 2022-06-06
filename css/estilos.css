@@ -6,7 +6,7 @@
   box-sizing: border-box; }
 
 html {
-  font-size: 62,5%; }
+  font-size: 62, 5%; }
 
 body {
   font-family: Poppins; }
@@ -181,7 +181,8 @@ header {
       header nav .nav-container .nav-a {
         text-decoration: none;
         color: white; }
-      header nav .nav-container .nav-label_img, header nav .nav-container .nav-input {
+      header nav .nav-container .nav-label_img,
+      header nav .nav-container .nav-input {
         display: none; }
       @media (max-width: 768px) {
         header nav .nav-container .nav-label_img {
@@ -810,6 +811,10 @@ main {
     opacity: 0;
     transform: translateY(10px);
     transition: opacity 0.3s, transform 0.2s; }
+    @media (max-width: 475px) {
+      [data-tooltip_form]::after {
+        width: 200px;
+        left: calc(50% - 100px); } }
   [data-tooltip_form]:hover::after {
     opacity: 1;
     visibility: visible;
@@ -1043,6 +1048,9 @@ main {
   flex-direction: row;
   justify-content: space-between;
   align-items: center; }
+  @media (max-width: 1020px) {
+    .contact {
+      flex-direction: column; } }
   .contact h2 {
     font-size: 120px;
     margin: 25px; }
@@ -1055,6 +1063,14 @@ main {
   .contact .img img {
     width: 300px;
     height: 300px; }
+    @media (max-width: 1200px) {
+      .contact .img img {
+        width: 200px;
+        height: 200px; } }
+    @media (max-width: 1085px) {
+      .contact .img img {
+        width: 150px;
+        height: 150px; } }
   .contact form {
     display: flex;
     flex-direction: column;
@@ -1064,6 +1080,13 @@ main {
     margin: 25px;
     border: solid 1px black;
     font-family: Poppins; }
+    @media (max-width: 1020px) {
+      .contact form {
+        margin: 25px 0px; } }
+    @media (max-width: 475px) {
+      .contact form {
+        font-size: 15px;
+        margin: 25px; } }
     .contact form label {
       font-weight: bold; }
       .contact form label b {
@@ -1155,6 +1178,9 @@ main {
           padding: 10px;
           border-radius: 5px;
           position: relative; }
+          @media (max-width: 470px) {
+            .contact form .button button span {
+              font-size: 15px; } }
 
 @keyframes animate_border {
   to {
@@ -1162,7 +1188,52 @@ main {
 
 footer {
   grid-area: footer;
-  background-color: black; }
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  footer .footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    footer .footer-container .social-media {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; }
+      footer .footer-container .social-media .social-github a {
+        text-decoration: none;
+        color: white; }
+      footer .footer-container .social-media .social-github .bxl-github {
+        font-size: 45px; }
+      footer .footer-container .social-media .social-linkedin {
+        margin: 0px 20px; }
+        footer .footer-container .social-media .social-linkedin a {
+          text-decoration: none;
+          color: white; }
+        footer .footer-container .social-media .social-linkedin .bxl-linkedin {
+          font-size: 45px; }
+      footer .footer-container .social-media .social-twitter a {
+        text-decoration: none;
+        color: white; }
+      footer .footer-container .social-media .social-twitter .bxl-twitter {
+        font-size: 45px; }
+      footer .footer-container .social-media .social-ig {
+        margin-left: 25px; }
+        footer .footer-container .social-media .social-ig a {
+          text-decoration: none;
+          color: white; }
+        footer .footer-container .social-media .social-ig .bxl-instagram {
+          font-size: 45px; }
+    footer .footer-container .thx {
+      margin: 10px 5px; }
+      footer .footer-container .thx p {
+        color: white;
+        text-align: center; }
+    footer .footer-container .up a {
+      color: white; }
 
 .flex-container_success {
   display: flex;

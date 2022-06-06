@@ -822,6 +822,10 @@ main {
         opacity: 0;
         transform: translateY(10px);
         transition: opacity 0.3s, transform 0.2s;
+        @media (max-width: 475px){
+            width: 200px;
+            left: calc(50% - 100px);
+        }
     }
 
     &:hover::after {
@@ -1129,6 +1133,9 @@ main {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    @include mQueriePages(l){
+        flex-direction: column;
+    }
 
     h2 {
         font-size: 120px;
@@ -1147,6 +1154,14 @@ main {
         img{
             width: 300px;
             height: 300px;
+            @include mQueriePages(desktopL){
+                width: 200px;
+                height: 200px;
+            }
+            @media (max-width: 1085px){
+                width: 150px;
+                height: 150px;
+            }
         }
     }
 
@@ -1159,6 +1174,15 @@ main {
         margin: 25px;
         border: solid 1px black;
         font-family: Poppins;
+
+        @include mQueriePages(l){
+            margin: 25px 0px;
+        }
+
+        @media (max-width: 475px){
+            font-size: 15px;
+            margin: 25px;
+        }
 
         label {
             font-weight: bold;
@@ -1239,6 +1263,8 @@ main {
             textarea {
                 margin-top: 5px;
             }
+            .instructions{
+            }
         }
 
         .button {
@@ -1293,6 +1319,10 @@ main {
                     padding: 10px;
                     border-radius: 5px;
                     position: relative;
+
+                    @media (max-width: 470px){
+                        font-size: 15px;
+                    }
                 }
 
                 @keyframes animate_border{

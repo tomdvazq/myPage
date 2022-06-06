@@ -6,17 +6,17 @@
     box-sizing: border-box;
 }
 
-html{
-    font-size: 62,5%;
+html {
+    font-size: 62, 5%;
 }
 
-body{
+body {
     font-family: Poppins;
 }
 
 //Pre Loader// 
 
-.load-center{
+.load-center {
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -24,7 +24,7 @@ body{
     background-color: white;
 }
 
-.hidden{
+.hidden {
     overflow: hidden;
 }
 
@@ -132,4 +132,3 @@ body{
         transform: rotate(360deg);
     }
 }
-

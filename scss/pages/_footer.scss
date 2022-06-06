@@ -1,7 +1,76 @@
-footer{
+footer {
     grid-area: footer;
     background-color: black;
-    .footer-container{
-        
+    @include flex(column, center, center);
+
+    .footer-container {
+        @include flex(column, center, center);
+
+        .social-media {
+            @include flex(row, center, center);
+
+            .social-github {
+                a {
+                    text-decoration: none;
+                    color: white;
+                }
+
+                .bxl-github {
+                    font-size: 45px;
+                }
+            }
+
+            .social-linkedin {
+                margin: 0px 20px;
+
+                a {
+                    text-decoration: none;
+                    color: white;
+                }
+
+                .bxl-linkedin {
+                    font-size: 45px;
+                }
+            }
+
+            .social-twitter {
+                a {
+                    text-decoration: none;
+                    color: white;
+                }
+
+                .bxl-twitter {
+                    font-size: 45px;
+                }
+            }
+
+            .social-ig {
+                margin-left: 25px;
+
+                a {
+                    text-decoration: none;
+                    color: white;
+                }
+
+                .bxl-instagram {
+                    font-size: 45px;
+                }
+            }
+        }
+
+        .thx {
+            margin: 10px 5px;
+
+            p {
+                color: white;
+                text-align: center;
+            }
+        }
+
+        .up {
+            a {
+                color: white;
+            }
+        }
     }
 }
