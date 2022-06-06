@@ -126,6 +126,14 @@ body {
   grid-template-rows: 80px repeat(2, 1fr) 160px;
   grid-template-areas: "header header header" "main main main" "main main main" "footer footer footer"; }
 
+.body::-webkit-scrollbar {
+  width: 7px;
+  background-color: rgba(0, 0, 0, 0.1); }
+
+.body::-webkit-scrollbar-thumb {
+  background: rgba(255, 132, 0, 0.4);
+  border-radius: 5px; }
+
 /* Secciones sintáxicas */
 aside {
   grid-area: aside; }
