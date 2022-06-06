@@ -28,6 +28,6 @@ mail($for, $asunto, utf8_decode($bodymail), $header);
 
 //Redirección//
 
-header('Location:exito.html');
+header('Location:success.html');
 
 ?>
