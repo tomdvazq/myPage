@@ -1,0 +1,19 @@
+.flex-container_success{
+    @include flex(column, center, center);
+    height: 100vh;
+    width: 100vw;
+        .congrats{
+            @include flex(column, center, center);
+            text-align: center;
+                h1{
+                }
+                h2{
+                    margin: 15px 0px;
+                }
+                img{
+                    margin-bottom: 15px;
+                    width: 70px;
+                    height: 70px;
+                }
+        }
+}
