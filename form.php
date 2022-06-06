@@ -20,13 +20,14 @@ $bodymail = "Este e-mail fue enviado el" date('d/m/Y', time());
 //Dirección//
 
 $for = "tomdvazq@gmail.com";
-$asunto = "Contacto por trabajo vía tomdvazq.io"
+$asunto = "Contacto por trabajo vía tomdvazq.io";
 
 //Función mail//
 
-mail($for, $asunto, utf8_decode($bodymail), $header)
+mail($for, $asunto, utf8_decode($bodymail), $header);
 
 //Redirección//
 
-header('Location:exito.html')
+header('Location:exito.html');
+
 ?>
