@@ -257,7 +257,7 @@ main {
         }
 
         @include mQueriePages (mobileSecond) {
-            height: 270px;
+            height: 280px;
         }
     }
 
@@ -584,7 +584,7 @@ main {
 
                 @include mQueriePages(s) {
                     min-width: 100%;
-                    height: 45vh;
+                    height: 50vh;
                 }
             }
 

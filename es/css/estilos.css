@@ -1027,7 +1027,7 @@ main {
 @media (max-width: 600px) {
     .hard-skills .hardskills-readmore .hide .container {
         min-width: 100%;
-        height: 45vh;
+        height: 50vh;
     }
 }
 

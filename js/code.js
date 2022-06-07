@@ -16,6 +16,7 @@ collapsibles.forEach(element => {
     })
 });
 
+
 //Button//
 
 let readmore_btn = document.getElementById('readmore_btn');
