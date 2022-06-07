@@ -182,23 +182,24 @@ footer {
     grid-area: footer;
 }
 
-.language{
+.language {
     position: relative;
+    bottom: 10px;
     width: 50px;
     cursor: pointer;
 }
 
-.language:before{
+.language:before {
     content: "";
     position: absolute;
     width: 50px;
     height: 24px;
-    background: rgb(172,53,53);
-    background: linear-gradient(90deg, rgba(172,53,53,1) 0%, rgba(154,144,255,1) 50%, rgba(172,53,53,1) 100%);
+    background: #ac3535;
+    background: linear-gradient(90deg, #ac3535 0%, #9a90ff 50%, #ac3535 100%);
     border-radius: 25px;
 }
 
-.language:after{
+.language:after {
     content: "";
     position: absolute;
     width: 25px;
@@ -210,7 +211,7 @@ footer {
     box-sizing: border-box;
 }
 
-.language:checked:after{
+.language:checked:after {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -219,9 +220,16 @@ footer {
     border: 2px solid black;
 }
 
-.language:checked:before{
-    background: rgb(163,27,27);
-    background: linear-gradient(90deg, rgba(163,27,27,1) 0%, rgba(255,228,0,1) 50%, rgba(163,27,27,1) 100%);
+.language:checked:before {
+    background: #a31b1b;
+    background: linear-gradient(90deg, #a31b1b 0%, #ffe400 50%, #a31b1b 100%);
+}
+
+.flags {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 header {
@@ -349,15 +357,21 @@ main {
     font-size: 135px;
 }
 
-@media (max-width: 1020px) {
+@media (max-width: 1140px) {
     .home h1 {
         font-size: 90px;
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 760px) {
     .home h1 {
         font-size: 50px;
+    }
+}
+
+@media (max-width: 420px) {
+    .home h1 {
+        font-size: 35px;
     }
 }
 
@@ -1318,6 +1332,12 @@ main {
     }
 }
 
+@media (max-width: 420px) {
+    .portfolio .portfolio-title h2 {
+        font-size: 50px;
+    }
+}
+
 .portfolio .portfolio-title span {
     font-weight: bold;
     font-size: 120px;
@@ -1333,6 +1353,12 @@ main {
 @media (max-width: 600px) {
     .portfolio .portfolio-title span {
         font-size: 70px;
+    }
+}
+
+@media (max-width: 420px) {
+    .portfolio .portfolio-title span {
+        font-size: 50px;
     }
 }
 
@@ -1895,6 +1921,12 @@ footer .footer-container .thx {
 footer .footer-container .thx p {
     color: white;
     text-align: center;
+}
+
+@media (max-width: 420px){
+    footer .footer-container .thx p {
+        font-size: 15px;
+    }
 }
 
 footer .footer-container .up a {
