@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="media/me-bnw.ico">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel='stylesheet' href='https://unpkg.com/emoji.css/dist/emoji.min.css'>
+    <link href="css/estilos.css" rel="stylesheet">
+    <title>Home | @tomdvazq</title>
+</head>
+
+<body class="hidden body">
+    <!-- Loader -->
+    <div class="load-center" id="onload">
+        <div class="lds-roller">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <!-- Page -->
+    <div class="grid-container">
+        <!-- Navbar -->
+        <header>
+            <nav>
+                <div class="nav-container">
+
+                    <!-- LOGO -->
+                    <a href="index.html" class="nav-logo">@tomdvazq</a>
+
+                    <!-- NAV HAMBURGUER MOBILE/TABLET -->
+                    <label for="menu"" class=" nav-label">
+                        <i class='bx bx-menu nav-label_img'></i>
+                    </label>
+                    <input type="checkbox" id="menu" class="nav-input">
+
+                    <!-- NAV MENU -->
+                    <ul class="nav-ul">
+                        <li class="nav-li"><a href="#welcome" class="nav-a">Home</a></li>
+                        <li class="nav-li"><a href="#aboutme" class="nav-a">Sobre mí</a></li>
+                        <li class="nav-li"><a href="#hardskills" class="nav-a">Hard Skills</a></li>
+                        <li class="nav-li"><a href="#portfolio" class="nav-a">Portafolio</a></li>
+                        <li class="nav-li"><a href="#contact" class="nav-a">Contacto</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Main -->
+        <main>
+            <div class="main-container">
+                <!-- Home -->
+                <section class="home" id="welcome">
+                    <img src="../media/AvatarMaker.png" alt="avatar">
+                    <h1>Hola, soy <span>Tomás</span>.</h1>
+                    <div class="continue">
+                        <p>Continua bajando</p>
+                        <i class='bx bx-chevron-down'></i>
+                    </div>
+                </section>
+
+                <!-- Sobre mí -->
+                <section class="about-me" id="aboutme">
+                    <!-- Title -->
+                    <div class="about-me_title">
+                        <h2 class="h2-about">Sobre</h2>
+                        <h2 class="h2-rotate">Mi</h2>
+                    </div>
+                    <!-- I'm -->
+                    <div class="about-me_im">
+                        <p>Desarrollador Frontend</p>
+                        <p>UI Creativo</p>
+                        <p>Diseñador Gráfico</p>
+                        <p>Editor de video</p>
+                        <p>Productor Musical</p>
+                    </div>
+                    <!-- Data -->
+                    <div class="about-me_data">
+                        <div class="aboutMe_data-acc">
+                            <!-- First of all -->
+                            <div class="aboutMe-data_container first">
+                                <div class="aboutMe-data_collapse">
+                                    <h3 class="aboutMe-sentence">Antes que nada, gracias por visitar mi sitio
+                                        <span>&#128591;</span></h3>
+                                    <div class="arrow-container">
+                                        <span class="line"></span>
+                                        <span class="line"></span>
+                                    </div>
+                                </div>
+                                <div class="aboutMe-answer">
+                                    <p>
+                                        Mi nombre es <b>Tomás</b>, tengo 23 años y soy de Argentina. Desde que terminé el secundario pasé por muchos lugares antes de tomar la decisión de ser desarrollador. El mundo de la informática siempre estuvo cerca mío, pero durante mucho tiempo me resistí a conocerlo en profundidad.
+                                    </p>
+                                    <p>
+                                        <i>Pero siempre, tarde o temprano, se llega al puerto que hay que llegar.</i>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- How did I learn about programming?-->
+                            <div class="aboutMe-data_container">
+                                <div class="aboutMe-data_collapse">
+                                    <h3 class="aboutMe-sentence">¿Como conocí la programación?
+                                        <span>&#128187;</span></h3>
+                                    <div class="arrow-container">
+                                        <span class="line"></span>
+                                        <span class="line"></span>
+                                    </div>
+                                </div>
+                                <div class="aboutMe-answer">
+                                    <p>
+                                        Mi primer acercamiento fue a los nueve años cuando cree mi propia versión de <b>Habbo Hotel</b>, un juego multijugador que había liberado sú código para que la comunidad cree sus propias versiones.
+                                    </p>
+                                    <p>
+                                        Sin saber realmente que estaba haciendo, comencé a utilizar PHP y SQL para poder alojar usuarios en mi propia versión del juego. Por falta de experiencia en seguridad fue hackeado rapidamente <span>&#128514;</span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Studies -->
+                            <div class="aboutMe-data_container">
+                                <div class="aboutMe-data_collapse">
+                                    <h3 class="aboutMe-sentence">Estudios <span>&#128218;</span></h3>
+                                    <div class="arrow-container">
+                                        <span class="line"></span>
+                                        <span class="line"></span>
+                                    </div>
+                                </div>
+                                <div class="aboutMe-answer">
+                                    <p>
+                                        Comencé mis estudios vía <b><a href="https://youtube.com"
+                                                target="_blank">YouTube</a></b> gracias a la colaboración de varios tutoriales de la comunidad, gracias a la plataforma conocí <b><a
+                                                href="https://freecodecamp.com/"
+                                                target="_blank"">freeCodeCamp</a></b> y tomé los cursos de HTML y CSS. Fue en <i>marzo del 2022</i> que decidí estudiar seriamente y me anoté en <b><a href="
+                                                https://coderhouse.com/" target="_blank">CoderHouse</a></b>, la academia donde me certifiqué como desarrollador web. Actualmente sigo estudiando en CoderHouse y soy muy autodidacta.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Hardskills -->
+                <section class="hard-skills" id="hardskills">
+                    <div class="hardskills-title">
+                        <h2>Hards<span>kills</span></h2>
+                        <h4><span>&#127760;</span><i>Desarrollo Web</i></h4>
+                    </div>
+                    <div class="hardskills-logos">
+                        <div class="html">
+                            <i class='bx bxl-html5'></i>
+                            <h4>HTML5</h4>
+                        </div>
+                        <div class="css">
+                            <i class='bx bxl-css3'></i>
+                            <h4>CSS3</h4>
+                        </div>
+                        <div class="js">
+                            <i class='bx bxl-javascript'></i>
+                            <h4>JavaScript</h4>
+                        </div>
+                        <div class="php">
+                            <i class='bx bxl-php'></i>
+                            <h4>PHP</h4>
+                        </div>
+                    </div>
+                    <div class="hardskills-readmore">
+                        <button class="readmore-btn" id="readmore_btn">Leer más</button>
+                        <div class="hide" id="hideText">
+                            <ul>
+                                <li class="li bs active"><i class='bx bxl-bootstrap'></i></li>
+                                <li class="li tw"><i class='bx bxl-tailwind-css'></i></li>
+                                <li class="li sass"><i class='bx bxl-sass'></i></li>
+                                <li class="li css-pure"><i class='bx bxs-file-css'></i></li>
+                            </ul>
+                            <div class="container">
+                                <div class="block active">
+                                    <h5><a href="https://getbootstrap.com/">Bootstrap</a></h5>
+                                    <p>Como muchos, <b>Bootstrap</b> fue el primer framework de CSS que utilicé. Personalmente no me gusta utilizarlo demasiado debido a que dificulta la legibilidad del código HTML. Más allá de mis preferencias, lo utilizo cuando necesito algo rápido y puntual.</p>
+                                    <p>Esto no quiere decir que rechaze Bootstrap, puedo trabajar con él tranquilamente. Pero no está en mi <b>lista de preferencias</b>.</p>
+                                </div>
+                                <div class="block">
+                                    <h5><a href="https://tailwindcss.com/">Tailwind CSS</a></h5>
+                                    <p>A diferencia de Bootstrap, <b>Tailwind</b> me parece un framework mucho más prolijo y ordenado.</p>
+                                    <p>Además de eso, creo que este proyecto creado por Wathan y Schoger ofrece una personalización mucho más amplia.</p>
+                                </div>
+                                <div class="block">
+                                    <h5><a href="https://sass-lang.com/">Sass</a></h5>
+                                    <p>¡Mi herramienta favorita! <b>Sass</b>, como su nombre lo dice, es fantástico.</p>
+                                    <p>El hecho de poder trabajar un proyecto de forma tan organizada con herramientas como imports y nestings es una auténtica locura. Variables, mixins, hacer extends... SCSS es mi mejor amiga cuando se trata de estilo.</p>
+                                </div>
+                                <div class="block">
+                                    <h5>CSS Puro</h5>
+                                    <p>Antes de conocer el resto de las herramientas estudié profundamente y con atención las raíces de las <b>hojas de estilo en cascada</b>.</p>
+                                    <p>Tengo experiencia maquetando con grid, flex y box-modeling para cerrar los últimos detalles.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="softskills">
+                        <h2>Más herramientas</h2>
+                        <div class="softskills-logos">
+                            <div class="git">
+                                <i class='bx bxl-git' data-tooltip="Git"></i>
+                            </div>
+                            <div class="github">
+                                <i class='bx bxl-github' data-tooltip="GitHub"></i>
+                            </div>
+                            <div class="visual">
+                                <i class='bx bxl-visual-studio' data-tooltip_l="Visual Studio Code"></i>
+                            </div>
+                            <div class="wordpress">
+                                <i class='bx bxl-wordpress' data-tooltip_l="Wordpress Pages"></i>
+                            </div>
+                            <div class="adobe">
+                                <i class='bx bxl-adobe' data-tooltip="Adobe"></i>
+                            </div>
+                            <div class="design">
+                                <i class='bx bx-palette' data-tooltip_l="Creative Design"></i>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Portfolio -->
+                <section class="portfolio" id="portfolio">
+                    <div class="portfolio-title">
+                        <h2>Portafol</h2><span>io</span>
+                    </div>
+                    <div class="portfolio-sentence">
+                        <p><i>"La medida de lo que somos es lo que hacemos con lo que tenemos."</i></p>
+                    </div>
+                </section>
+                <section class="portfolio-2">
+                    <section class="portfolio-cards difx">
+                        <div class="project-difx">
+                            <div class="front">
+                                <h2>DiFX</h2>
+                            </div>
+                            <div class="back">
+                                <h3><a href="https://tomdvazq.github.io/difxCoderHouse/" target="_blank">DiFX</a></h3>
+                                <p>DiFX fue el proyecto con el que me certifiqué como Desarrollador Web en Coderhouse. La idea del proyecto hoy en día se transformó en esencia y la estoy desarrollando personalmente más allá de la academia.</p>
+                                <div class="repository">
+                                    <a href="https://github.com/tomdvazq/difxCoderHouse" target="_blank">
+                                        <i class='bx bxl-github'></i>
+                                        <span>¡Click aquí para visitar el repo!</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="portfolio-cards myc">
+                        <div class="project-myc">
+                            <div class="front">
+                                <h2>>myCalculator!</h2>
+                            </div>
+                            <div class="back">
+                                <h3><a href="https://tomdvazq.github.io/myCalculator/" target="_blank">myCalculator!</a>
+                                </h3>
+                                <p>myCalculator! fue mi primer acercamiento al lenguaje de programación JavaScript. Es una calculadora que cumple con las funciones básicas de las operaciones aritméticas de una forma correcta y sencilla.</p>
+                                <div class="repository">
+                                    <a href="https://github.com/tomdvazq/myCalculator" target="_blank">
+                                        <i class='bx bxl-github'></i>
+                                        <span>¡Click aquí para visitar el repo!</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+
+                <!-- Contacto -->
+                <section class="contact" id="contact">
+                    <h2>Contacto</h2>
+                    <div class="img">
+                        <img src="../media/contact.png" alt="contact">
+                    </div>
+                    <form action='form.php' method='POST'>
+                        <div class="form-row">
+                            <label for="name">Nombre</label>
+                            <input type="text" name="name" id="name" class="space-form">
+                        </div>
+                        <div class="form-row">
+                            <label for="company" class="company">Compañía <b
+                                    data-tooltip_form="Si trabajas como reclutador en una empresa, por favor añade información en este punto. En el caso de que busques un servicio freelance no es necesario.">Opcional</b></label>
+                            <input type="text" name="company" id="company" class="space-form">
+                        </div>
+                        <div class="form-row">
+                            <label for="country">País</label>
+                            <input type="text" name="country" id="country" class="space-form">
+                        </div>
+                        <div class="form-row">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" class="space-form">
+                        </div>
+                        <fieldset class="legacy-form-row">
+                            <legend>Razón de contacto</legend>
+                            <input type="radio" name="work" id="work" value="Formal work">
+                            <label for="work" class="radio-label">Trabajo formal</label>
+                            <input type="radio" name="work" id="freelance" value="Freelance work">
+                            <label for="freelance" class="radio-label_f">Trabajo freelance</label>
+                        </fieldset>
+                        <div class="form-row message-section">
+                            <label for="message">Envíame un mensaje <b
+                                    data-tooltip_form="Si busca un contrato de autónomo, explique brevemente en qué consiste su proyecto. Si es un reclutador, añada información sobre la empresa.">Ver más</b></label>
+                            <textarea name="message" id="message" class="space-form_m"></textarea>
+                            <div class="instructions">Escribe un mensaje de hasta 500 palabras.</div>
+                        </div>
+                        <div class="form-row button">
+                            <button type="submit"><span>Enviar</span></button>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-container">
+                <div class="social-media">
+                    <div class="social-github">
+                        <a href="https://github.com/tomdvazq" target="_blank">
+                            <i class='bx bxl-github'></i>
+                        </a>
+                    </div>
+                    <div class="social-linkedin">
+                        <a href="https://www.linkedin.com/in/tom%C3%A1s-vazquez-980a7717b/" target="_blank">
+                            <i class='bx bxl-linkedin'></i>
+                        </a>
+                    </div>
+                    <div class="social-twitter">
+                        <a href="https://twitter.com/tomdvazq" target="_blank">
+                            <i class='bx bxl-twitter'></i>
+                        </a>
+                    </div>
+                    <div class="social-ig">
+                        <a href="https://www.instagram.com/tomdvazq/" target="_blank">
+                            <i class='bx bxl-instagram'></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="thx">
+                    <p>Si ha llegado hasta aquí, le agradezco que se haya tomado el tiempo de navegar por mi sitio. <span>&#128147;</span>
+                    </p>
+                </div>
+                <div class="up">
+                    <a href="index.html">
+                        <p>
+                            ¡Vamos arriba!
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- JS -->
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/codigo.js"></script>
+</body>
+
+</html>
