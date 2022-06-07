@@ -28,6 +28,8 @@ header {
             .nav-ul {
                 display: flex;
                 @include mQuerie(sections);
+                position: relative;
+                top: 4.5px;
             }
 
             .nav-li {
