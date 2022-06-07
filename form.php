@@ -1,21 +1,25 @@
 <?php
+
+error_reporting(0);
+
 $nombre = $_POST['name'];
 $company = $_POST['company'];
 $country = $_POST['country'];
 $mail = $_POST['email'];
 $work = $_POST['work'];
 $message = $_POST['message'];
+$bodymail = $_POST['message'];
 
 //Texto//
-$header .= "Content-Type: text/plain";
+$header = "Content-Type: text/plain";
 
 // Cuerpo del mail //
 
-$bodymail .= "Este mensaje fue enviado por:" . $nombre . ",\r\n";
+$bodymail = "Este mensaje fue enviado por:" . $nombre . ",\r\n";
 $bodymail .= "Perteneciente a la compañía:" . $company . ",\r\n";
 $bodymail .= "Vive en:" . $country . ",\r\n";
 $bodymail .= "Su e-mail es:" . $mail . ",\r\n";
-$bodymail .= "Está buscando un tipo de trabajo:" . $work . ",\r\n";
+$bodymail .= "Está interesado en un tipo de contratación:" . $work . ",\r\n";
 $bodymail .= "Y adjuntó el mensaje:" . $message . ",\r\n";
 $bodymail .= "Este e-mail fue enviado el" . date('d/m/Y', time());
 
@@ -29,6 +33,6 @@ $asunto = "Contacto por trabajo vía tomdvazq.io";
 mail($for, $asunto, utf8_decode($bodymail), $header);
 
 //Redirección//
-
-header('Location:success.html');
+echo "<script language=Javascript> location.href=\"success.html\";</script>";
+die();
 ?>
