@@ -1,3 +1,41 @@
-.en{
-    
+.language{
+    position: relative;
+    width: 50px;
+    cursor: pointer;
+}
+
+.language:before{
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 24px;
+    background: rgb(172,53,53);
+    background: linear-gradient(90deg, rgba(172,53,53,1) 0%, rgba(154,144,255,1) 50%, rgba(172,53,53,1) 100%);
+    border-radius: 25px;
+}
+
+.language:after{
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    border-radius: 25px;
+    transition: 0.25s;
+    border: 2px solid #333;
+    box-sizing: border-box;
+}
+
+.language:checked:after{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    left: 25px;
+    border: 2px solid black;
+}
+
+.language:checked:before{
+    background: rgb(163,27,27);
+    background: linear-gradient(90deg, rgba(163,27,27,1) 0%, rgba(255,228,0,1) 50%, rgba(163,27,27,1) 100%);
 }
